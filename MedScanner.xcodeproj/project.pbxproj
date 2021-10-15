@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49429A1E271977E500DA98F6 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49429A1D271977E500DA98F6 /* NetworkClient.swift */; };
+		49429A202719787000DA98F6 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49429A1F2719787000DA98F6 /* Endpoint.swift */; };
+		49429A2327197B4000DA98F6 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49429A2227197B4000DA98F6 /* HTTPMethod.swift */; };
+		49429A2527197B5300DA98F6 /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49429A2427197B5300DA98F6 /* HTTPTask.swift */; };
+		4992AEBA2719891300CAE610 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4992AEB92719891300CAE610 /* NetworkError.swift */; };
+		4992AEBC271989DE00CAE610 /* MedRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4992AEBB271989DE00CAE610 /* MedRepository.swift */; };
 		A486868227196A1800FA8530 /* MedScannerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A486868127196A1800FA8530 /* MedScannerApp.swift */; };
 		A486868427196A1800FA8530 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A486868327196A1800FA8530 /* ContentView.swift */; };
 		A486868627196A1C00FA8530 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A486868527196A1C00FA8530 /* Assets.xcassets */; };
@@ -14,6 +20,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		49429A1D271977E500DA98F6 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		49429A1F2719787000DA98F6 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		49429A2227197B4000DA98F6 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		49429A2427197B5300DA98F6 /* HTTPTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
+		4992AEB92719891300CAE610 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		4992AEBB271989DE00CAE610 /* MedRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedRepository.swift; sourceTree = "<group>"; };
 		A486867E27196A1800FA8530 /* MedScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A486868127196A1800FA8530 /* MedScannerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedScannerApp.swift; sourceTree = "<group>"; };
 		A486868327196A1800FA8530 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -43,17 +55,19 @@
 		49429A192719708D00DA98F6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4992AEBE2719C47200CAE610 /* ViewModels */,
 				A486868127196A1800FA8530 /* MedScannerApp.swift */,
 				A486868327196A1800FA8530 /* ContentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		49429A1A2719709800DA98F6 /* Extensions */ = {
+		49429A1A2719709800DA98F6 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				4992AEBB271989DE00CAE610 /* MedRepository.swift */,
 			);
-			path = Extensions;
+			path = Repositories;
 			sourceTree = "<group>";
 		};
 		49429A1B271970A400DA98F6 /* Wrappers */ = {
@@ -67,8 +81,27 @@
 		49429A1C271970A900DA98F6 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				49429A1D271977E500DA98F6 /* NetworkClient.swift */,
+				49429A1F2719787000DA98F6 /* Endpoint.swift */,
+				49429A2227197B4000DA98F6 /* HTTPMethod.swift */,
+				49429A2427197B5300DA98F6 /* HTTPTask.swift */,
+				4992AEB92719891300CAE610 /* NetworkError.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		4992AEBD2719BE1900CAE610 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4992AEBE2719C47200CAE610 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		A486867527196A1700FA8530 = {
@@ -90,7 +123,8 @@
 		A486868027196A1800FA8530 /* MedScanner */ = {
 			isa = PBXGroup;
 			children = (
-				49429A1A2719709800DA98F6 /* Extensions */,
+				4992AEBD2719BE1900CAE610 /* Models */,
+				49429A1A2719709800DA98F6 /* Repositories */,
 				49429A192719708D00DA98F6 /* Views */,
 				49429A182719708800DA98F6 /* Utils */,
 				A486868527196A1C00FA8530 /* Assets.xcassets */,
@@ -177,8 +211,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49429A2527197B5300DA98F6 /* HTTPTask.swift in Sources */,
+				4992AEBA2719891300CAE610 /* NetworkError.swift in Sources */,
+				4992AEBC271989DE00CAE610 /* MedRepository.swift in Sources */,
 				A486868427196A1800FA8530 /* ContentView.swift in Sources */,
 				A486868227196A1800FA8530 /* MedScannerApp.swift in Sources */,
+				49429A202719787000DA98F6 /* Endpoint.swift in Sources */,
+				49429A2327197B4000DA98F6 /* HTTPMethod.swift in Sources */,
+				49429A1E271977E500DA98F6 /* NetworkClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,7 +357,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -339,7 +379,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MedScanner/Preview Content\"";
-				DEVELOPMENT_TEAM = 92R23WEN26;
+				DEVELOPMENT_TEAM = S8TY89ZL5Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -347,7 +387,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
