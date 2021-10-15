@@ -21,6 +21,7 @@
 		A48686932719BD4000FA8530 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48686922719BD4000FA8530 /* ImagePickerView.swift */; };
 		A48686962719CAA600FA8530 /* CameraCooridnator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48686952719CAA600FA8530 /* CameraCooridnator.swift */; };
 		AB317DA2271978DA007172CE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB317DA1271978DA007172CE /* MainView.swift */; };
+		AB317DA52719C78C007172CE /* UserDefaultExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB317DA42719C78C007172CE /* UserDefaultExtention.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		A48686922719BD4000FA8530 /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImagePickerView.swift; path = MedScanner/ViewControllerRepresentable/ImagePickerView.swift; sourceTree = SOURCE_ROOT; };
 		A48686952719CAA600FA8530 /* CameraCooridnator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraCooridnator.swift; sourceTree = "<group>"; };
 		AB317DA1271978DA007172CE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		AB317DA42719C78C007172CE /* UserDefaultExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserDefaultExtention.swift; path = ../../../../../../UserDefaultExtention.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 		A486868027196A1800FA8530 /* MedScanner */ = {
 			isa = PBXGroup;
 			children = (
+				AB317DA32719C75B007172CE /* Extentions */,
 				4992AEBD2719BE1900CAE610 /* Models */,
 				A48686942719C77300FA8530 /* Coordinators */,
 				A48686912719BD1100FA8530 /* ViewControllerRepresentable */,
@@ -167,6 +170,14 @@
 				A48686952719CAA600FA8530 /* CameraCooridnator.swift */,
 			);
 			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		AB317DA32719C75B007172CE /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				AB317DA42719C78C007172CE /* UserDefaultExtention.swift */,
+			);
+			path = Extentions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +262,7 @@
 				49429A2327197B4000DA98F6 /* HTTPMethod.swift in Sources */,
 				49429A1E271977E500DA98F6 /* NetworkClient.swift in Sources */,
 				A48686932719BD4000FA8530 /* ImagePickerView.swift in Sources */,
+				AB317DA52719C78C007172CE /* UserDefaultExtention.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
