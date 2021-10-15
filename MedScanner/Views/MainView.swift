@@ -26,7 +26,7 @@ struct MainView: View {
                 }
             case .search:
                 VStack {
-                    Text("search")
+                    MedicineList()
                     EmptyView()
                 }
                 
