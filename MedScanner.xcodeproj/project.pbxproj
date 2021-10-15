@@ -17,6 +17,9 @@
 		A486868427196A1800FA8530 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A486868327196A1800FA8530 /* ContentView.swift */; };
 		A486868627196A1C00FA8530 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A486868527196A1C00FA8530 /* Assets.xcassets */; };
 		A486868927196A1C00FA8530 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A486868827196A1C00FA8530 /* Preview Assets.xcassets */; };
+		A48686902719B82A00FA8530 /* StartPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A486868F2719B82A00FA8530 /* StartPage.swift */; };
+		A48686932719BD4000FA8530 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48686922719BD4000FA8530 /* ImagePickerView.swift */; };
+		A48686962719CAA600FA8530 /* CameraCooridnator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48686952719CAA600FA8530 /* CameraCooridnator.swift */; };
 		AB317DA2271978DA007172CE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB317DA1271978DA007172CE /* MainView.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +35,9 @@
 		A486868327196A1800FA8530 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A486868527196A1C00FA8530 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A486868827196A1C00FA8530 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A486868F2719B82A00FA8530 /* StartPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPage.swift; sourceTree = "<group>"; };
+		A48686922719BD4000FA8530 /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImagePickerView.swift; path = MedScanner/ViewControllerRepresentable/ImagePickerView.swift; sourceTree = SOURCE_ROOT; };
+		A48686952719CAA600FA8530 /* CameraCooridnator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraCooridnator.swift; sourceTree = "<group>"; };
 		AB317DA1271978DA007172CE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,6 +67,7 @@
 				A486868127196A1800FA8530 /* MedScannerApp.swift */,
 				A486868327196A1800FA8530 /* ContentView.swift */,
 				AB317DA1271978DA007172CE /* MainView.swift */,
+				A486868F2719B82A00FA8530 /* StartPage.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -127,6 +134,8 @@
 			isa = PBXGroup;
 			children = (
 				4992AEBD2719BE1900CAE610 /* Models */,
+				A48686942719C77300FA8530 /* Coordinators */,
+				A48686912719BD1100FA8530 /* ViewControllerRepresentable */,
 				49429A1A2719709800DA98F6 /* Repositories */,
 				49429A192719708D00DA98F6 /* Views */,
 				49429A182719708800DA98F6 /* Utils */,
@@ -142,6 +151,22 @@
 				A486868827196A1C00FA8530 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A48686912719BD1100FA8530 /* ViewControllerRepresentable */ = {
+			isa = PBXGroup;
+			children = (
+				A48686922719BD4000FA8530 /* ImagePickerView.swift */,
+			);
+			path = ViewControllerRepresentable;
+			sourceTree = "<group>";
+		};
+		A48686942719C77300FA8530 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				A48686952719CAA600FA8530 /* CameraCooridnator.swift */,
+			);
+			path = Coordinators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,11 +243,14 @@
 				4992AEBA2719891300CAE610 /* NetworkError.swift in Sources */,
 				4992AEBC271989DE00CAE610 /* MedRepository.swift in Sources */,
 				A486868427196A1800FA8530 /* ContentView.swift in Sources */,
+				A48686902719B82A00FA8530 /* StartPage.swift in Sources */,
 				AB317DA2271978DA007172CE /* MainView.swift in Sources */,
 				A486868227196A1800FA8530 /* MedScannerApp.swift in Sources */,
+				A48686962719CAA600FA8530 /* CameraCooridnator.swift in Sources */,
 				49429A202719787000DA98F6 /* Endpoint.swift in Sources */,
 				49429A2327197B4000DA98F6 /* HTTPMethod.swift in Sources */,
 				49429A1E271977E500DA98F6 /* NetworkClient.swift in Sources */,
+				A48686932719BD4000FA8530 /* ImagePickerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
