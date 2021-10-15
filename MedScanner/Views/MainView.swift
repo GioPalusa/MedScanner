@@ -9,7 +9,6 @@ import SwiftUI
 
 struct MainView: View {
     
-    //@State var currentTab = "Home"
     @StateObject var viewRoute = ViewRouter()
     
     init(){
