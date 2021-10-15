@@ -1,5 +1,5 @@
 //
-//  AppStorage.swift
+//  LocalStorage.swift
 //  MedScanner
 //
 //  Created by Jacob Ahlberg on 2021-10-15.
