@@ -18,6 +18,7 @@
 		A486868627196A1C00FA8530 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A486868527196A1C00FA8530 /* Assets.xcassets */; };
 		A486868927196A1C00FA8530 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A486868827196A1C00FA8530 /* Preview Assets.xcassets */; };
 		AB317DA2271978DA007172CE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB317DA1271978DA007172CE /* MainView.swift */; };
+		AB317DA52719C78C007172CE /* UserDefaultExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB317DA42719C78C007172CE /* UserDefaultExtention.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		A486868527196A1C00FA8530 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A486868827196A1C00FA8530 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AB317DA1271978DA007172CE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		AB317DA42719C78C007172CE /* UserDefaultExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserDefaultExtention.swift; path = ../../../../../../UserDefaultExtention.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 		A486868027196A1800FA8530 /* MedScanner */ = {
 			isa = PBXGroup;
 			children = (
+				AB317DA32719C75B007172CE /* Extentions */,
 				4992AEBD2719BE1900CAE610 /* Models */,
 				49429A1A2719709800DA98F6 /* Repositories */,
 				49429A192719708D00DA98F6 /* Views */,
@@ -142,6 +145,14 @@
 				A486868827196A1C00FA8530 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AB317DA32719C75B007172CE /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				AB317DA42719C78C007172CE /* UserDefaultExtention.swift */,
+			);
+			path = Extentions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,6 +234,7 @@
 				49429A202719787000DA98F6 /* Endpoint.swift in Sources */,
 				49429A2327197B4000DA98F6 /* HTTPMethod.swift in Sources */,
 				49429A1E271977E500DA98F6 /* NetworkClient.swift in Sources */,
+				AB317DA52719C78C007172CE /* UserDefaultExtention.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

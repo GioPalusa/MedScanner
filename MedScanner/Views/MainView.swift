@@ -18,24 +18,24 @@ struct MainView: View {
     var body: some View {
         VStack(spacing: 0) {
             
-        switch viewRoute.currentPage {
+            switch viewRoute.currentPage {
             case .home:
-            VStack {
-                Text("Home")
-                EmptyView()
-            }
+                VStack {
+                    Text("Home")
+                    EmptyView()
+                }
             case .search:
-            VStack {
-                Text("search")
-                EmptyView()
-            }
+                VStack {
+                    Text("search")
+                    EmptyView()
+                }
                 
             case .favourites:
-            VStack {
-                Text("favorites")
-                EmptyView()
+                VStack {
+                    Text("favorites")
+                    EmptyView()
+                }
             }
-        }
             Spacer()
             
             HStack(spacing: 100) {
@@ -95,9 +95,9 @@ class ViewRouter: ObservableObject {
 
 
 enum Page {
-     case home
-     case search
-     case favourites
+    case home
+    case search
+    case favourites
     
     var imageName: String {
         switch self {
@@ -106,4 +106,4 @@ enum Page {
         case .search: return "person.crop.circle.fill.badge.plus"
         }
     }
- }
+}
