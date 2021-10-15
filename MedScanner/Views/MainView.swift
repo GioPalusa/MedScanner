@@ -9,7 +9,8 @@ import SwiftUI
 
 struct MainView: View {
     
-    @State var currentTab = "Home"
+    //@State var currentTab = "Home"
+    @StateObject var viewRoute = ViewRouter()
     
     init(){
         UITabBar.appearance().isHidden = true
@@ -17,22 +18,31 @@ struct MainView: View {
     
     var body: some View {
         VStack(spacing: 0) {
-            TabView(selection: $currentTab) {
+            
+        switch viewRoute.currentPage {
+            case .home:
+            VStack {
                 Text("Home")
-                    .modifier(BGModifier())
-                    .tag("home")
-                Text("Add")
-                    .modifier(BGModifier())
-                    .tag("add")
-                Text("Add")
-                    .modifier(BGModifier())
-                    .tag("add")
+                EmptyView()
             }
+            case .search:
+            VStack {
+                Text("search")
+                EmptyView()
+            }
+                
+            case .favourites:
+            VStack {
+                Text("favorites")
+                EmptyView()
+            }
+        }
+            Spacer()
             
             HStack(spacing: 100) {
-                TabButton(image: "house")
-                TabButton(image: "plus.rectangle.on.folder")
-                TabButton(image: "person.crop.circle.fill.badge.plus")
+                TabButton(page: .home)
+                TabButton(page: .favourites)
+                TabButton(page: .search)
             }
             .padding(.top)
             .frame(maxWidth: .infinity)
@@ -44,20 +54,20 @@ struct MainView: View {
     }
     
     @ViewBuilder
-    func TabButton(image: String) -> some View {
+    func TabButton(page: Page) -> some View {
         
         Button {
             withAnimation {
-                currentTab = image
+                viewRoute.currentPage = page
             }
         } label: {
-            Image(systemName: image)
+            Image(systemName: page.imageName)
                 .resizable()
                 .renderingMode(.template)
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 25, height: 25)
                 .foregroundColor(
-                    currentTab == image ? Color.black
+                    viewRoute.currentPage == page ? Color.black
                     : Color.gray.opacity(0.8)
                 )
         }
@@ -78,3 +88,23 @@ struct MainView_Previews: PreviewProvider {
         MainView()
     }
 }
+
+
+class ViewRouter: ObservableObject {
+    @Published var currentPage: Page = .home
+}
+
+
+enum Page {
+     case home
+     case search
+     case favourites
+    
+    var imageName: String {
+        switch self {
+        case .home: return "house"
+        case .favourites: return "plus.rectangle.on.folder"
+        case .search: return "person.crop.circle.fill.badge.plus"
+        }
+    }
+ }
