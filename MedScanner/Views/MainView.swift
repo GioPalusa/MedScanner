@@ -27,7 +27,6 @@ struct MainView: View {
             case .search:
                 VStack {
                     MedicineList()
-                    EmptyView()
                 }
                 
             case .favourites:
@@ -69,8 +68,7 @@ struct MainView: View {
                     viewRoute.currentPage == page ? Color.black
                     : Color.gray.opacity(0.8)
                 )
-        }
-        
+        }.frame(width: 50, height: 40)
     }
 }
 
