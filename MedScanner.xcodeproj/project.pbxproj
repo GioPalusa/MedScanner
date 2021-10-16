@@ -20,7 +20,6 @@
 		A48686902719B82A00FA8530 /* StartPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A486868F2719B82A00FA8530 /* StartPage.swift */; };
 		A48686932719BD4000FA8530 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48686922719BD4000FA8530 /* ImagePickerView.swift */; };
 		A48686962719CAA600FA8530 /* CameraCooridnator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48686952719CAA600FA8530 /* CameraCooridnator.swift */; };
-		A48686992719D37800FA8530 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48686982719D37800FA8530 /* CameraView.swift */; };
 		A486869B2719D42900FA8530 /* CustomCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A486869A2719D42900FA8530 /* CustomCameraView.swift */; };
 		A486869D2719D46500FA8530 /* CaptureButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A486869C2719D46500FA8530 /* CaptureButtonView.swift */; };
 		A486869F2719D4A700FA8530 /* CustomCameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A486869E2719D4A700FA8530 /* CustomCameraController.swift */; };
@@ -45,7 +44,6 @@
 		A486868F2719B82A00FA8530 /* StartPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPage.swift; sourceTree = "<group>"; };
 		A48686922719BD4000FA8530 /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImagePickerView.swift; path = MedScanner/ViewControllerRepresentable/ImagePickerView.swift; sourceTree = SOURCE_ROOT; };
 		A48686952719CAA600FA8530 /* CameraCooridnator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraCooridnator.swift; sourceTree = "<group>"; };
-		A48686982719D37800FA8530 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		A486869A2719D42900FA8530 /* CustomCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCameraView.swift; sourceTree = "<group>"; };
 		A486869C2719D46500FA8530 /* CaptureButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureButtonView.swift; sourceTree = "<group>"; };
 		A486869E2719D4A700FA8530 /* CustomCameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCameraController.swift; sourceTree = "<group>"; };
@@ -190,7 +188,6 @@
 		A48686972719D35300FA8530 /* CameraViews */ = {
 			isa = PBXGroup;
 			children = (
-				A48686982719D37800FA8530 /* CameraView.swift */,
 				A486869A2719D42900FA8530 /* CustomCameraView.swift */,
 				A486869C2719D46500FA8530 /* CaptureButtonView.swift */,
 				A486869E2719D4A700FA8530 /* CustomCameraController.swift */,
@@ -282,7 +279,6 @@
 				4992AEBA2719891300CAE610 /* NetworkError.swift in Sources */,
 				498CC41F2719CC7B00EC743C /* LocalStorage.swift in Sources */,
 				4992AEBC271989DE00CAE610 /* MedRepository.swift in Sources */,
-				A48686992719D37800FA8530 /* CameraView.swift in Sources */,
 				A48686902719B82A00FA8530 /* StartPage.swift in Sources */,
 				AB317DA2271978DA007172CE /* MainView.swift in Sources */,
 				A486868227196A1800FA8530 /* MedScannerApp.swift in Sources */,
@@ -428,6 +424,7 @@
 				DEVELOPMENT_TEAM = S8TY89ZL5Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Vi behöver använda kameran för att känna igen texten på etiketterna.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -458,6 +455,7 @@
 				DEVELOPMENT_TEAM = S8TY89ZL5Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Vi behöver använda kameran för att känna igen texten på etiketterna.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
