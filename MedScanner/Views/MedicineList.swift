@@ -9,7 +9,16 @@ import SwiftUI
 
 struct MedicineList: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            ScrollView(.vertical, showsIndicators: true) {
+                LazyVStack {
+                    ForEach(1...100, id: \.self) { value in
+                        Text("Row \(value)")
+                    }.frame(width: .infinity, height: 200)
+                }
+            }
+            .navigationTitle("Min lista")
+        }
     }
 }
 
