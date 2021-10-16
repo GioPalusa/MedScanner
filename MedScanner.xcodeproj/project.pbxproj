@@ -34,6 +34,7 @@
 		AB317DAB271AC1D7007172CE /* UIColorExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB317DAA271AC1D7007172CE /* UIColorExtention.swift */; };
 		AB317DAE271ACA54007172CE /* MedicineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB317DAD271ACA54007172CE /* MedicineCell.swift */; };
 		AB317DB0271ACE24007172CE /* TextExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB317DAF271ACE24007172CE /* TextExtention.swift */; };
+		AB317DB2271ADD85007172CE /* Medicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB317DB1271ADD85007172CE /* Medicine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +66,7 @@
 		AB317DAA271AC1D7007172CE /* UIColorExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtention.swift; sourceTree = "<group>"; };
 		AB317DAD271ACA54007172CE /* MedicineCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineCell.swift; sourceTree = "<group>"; };
 		AB317DAF271ACE24007172CE /* TextExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextExtention.swift; sourceTree = "<group>"; };
+		AB317DB1271ADD85007172CE /* Medicine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Medicine.swift; path = MedScanner/Extentions/Medicine.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 		4992AEBD2719BE1900CAE610 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				AB317DB1271ADD85007172CE /* Medicine.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -318,6 +321,7 @@
 				498CC41F2719CC7B00EC743C /* LocalStorage.swift in Sources */,
 				4992AEBC271989DE00CAE610 /* MedRepository.swift in Sources */,
 				496F7F02271ACA4000A16DE5 /* Color+extensions.swift in Sources */,
+				AB317DB2271ADD85007172CE /* Medicine.swift in Sources */,
 				A48686902719B82A00FA8530 /* StartPage.swift in Sources */,
 				AB317DA2271978DA007172CE /* MainView.swift in Sources */,
 				A486868227196A1800FA8530 /* MedScannerApp.swift in Sources */,
