@@ -15,26 +15,36 @@ struct StartPage: View {
         imageCompletion: { _ in }
     )
 
-    var body: some View {
-        CustomCameraView(
-            customCameraRepresentable: customCameraRepresentable,
-            imageCompletion: { newImage in
-                self.image = newImage
-            }
-        )
-            .frame(width: 200, height: 300)
-            .onAppear {
-                customCameraRepresentable.startRunningCaptureSession()
-            }
-            .onDisappear {
-                customCameraRepresentable.stopRunningCaptureSession()
-            }
+    @FocusState private var isFocused: Bool
+    @State private var searchText = String()
+    @State private var presentCameraFrame = true
 
-        if let image = image {
-            Image(uiImage: image)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 20, height: 20)
+    var body: some View {
+        VStack(spacing: 16) {
+            if presentCameraFrame {
+                CustomCameraView(
+                    customCameraRepresentable: customCameraRepresentable,
+                    imageCompletion: { newImage in
+                        self.image = newImage
+                    }
+                )
+                    .frame(height: 300)
+                    .onAppear {
+                        customCameraRepresentable.startRunningCaptureSession()
+                    }
+                    .onDisappear {
+                        customCameraRepresentable.stopRunningCaptureSession()
+                    }
+            }
+            SearchBar(text: $searchText, focusedField: $isFocused)
+                .onChange(of: searchText) { newValue in
+                    // TODO: Handle new value
+                }
+                .onChange(of: isFocused) { newValue in
+                    withAnimation { presentCameraFrame = !newValue }
+                }
+
+            Spacer()
         }
     }
 }

@@ -15,8 +15,7 @@ struct MainView: View {
         VStack(spacing: 0) {
             
             switch viewRoute.currentPage {
-            case .home:
-                StartPage()
+            case .home: StartPage()
             case .search:
                 VStack {
                     MedicineList()

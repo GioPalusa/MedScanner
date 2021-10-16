@@ -13,6 +13,8 @@
 		49429A2527197B5300DA98F6 /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49429A2427197B5300DA98F6 /* HTTPTask.swift */; };
 		496F7F02271ACA4000A16DE5 /* Color+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496F7F01271ACA4000A16DE5 /* Color+extensions.swift */; };
 		498CC41F2719CC7B00EC743C /* LocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498CC41E2719CC7B00EC743C /* LocalStorage.swift */; };
+		498CC425271AB7EE00EC743C /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498CC424271AB7EE00EC743C /* SearchBar.swift */; };
+		498CC42A271AC7F400EC743C /* View+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498CC429271AC7F400EC743C /* View+extensions.swift */; };
 		4992AEBA2719891300CAE610 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4992AEB92719891300CAE610 /* NetworkError.swift */; };
 		4992AEBC271989DE00CAE610 /* MedRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4992AEBB271989DE00CAE610 /* MedRepository.swift */; };
 		A486868227196A1800FA8530 /* MedScannerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A486868127196A1800FA8530 /* MedScannerApp.swift */; };
@@ -40,6 +42,8 @@
 		49429A2427197B5300DA98F6 /* HTTPTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
 		496F7F01271ACA4000A16DE5 /* Color+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+extensions.swift"; sourceTree = "<group>"; };
 		498CC41E2719CC7B00EC743C /* LocalStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorage.swift; sourceTree = "<group>"; };
+		498CC424271AB7EE00EC743C /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		498CC429271AC7F400EC743C /* View+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+extensions.swift"; sourceTree = "<group>"; };
 		4992AEB92719891300CAE610 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		4992AEBB271989DE00CAE610 /* MedRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedRepository.swift; sourceTree = "<group>"; };
 		A486867E27196A1800FA8530 /* MedScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				AB317DAC271ACA26007172CE /* Cells */,
+				498CC423271AB7E500EC743C /* Components */,
 				A48686972719D35300FA8530 /* CameraViews */,
 				4992AEBE2719C47200CAE610 /* ViewModels */,
 				A486868127196A1800FA8530 /* MedScannerApp.swift */,
@@ -121,6 +126,14 @@
 				4992AEB92719891300CAE610 /* NetworkError.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		498CC423271AB7E500EC743C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				498CC424271AB7EE00EC743C /* SearchBar.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		4992AEBD2719BE1900CAE610 /* Models */ = {
@@ -209,6 +222,7 @@
 			children = (
 				AB317DA82719CC42007172CE /* UserDefaultExtention.swift */,
 				AB317DAA271AC1D7007172CE /* UIColorExtention.swift */,
+				498CC429271AC7F400EC743C /* View+extensions.swift */,
 				AB317DAF271ACE24007172CE /* TextExtention.swift */,
 				496F7F01271ACA4000A16DE5 /* Color+extensions.swift */,
 			);
@@ -304,6 +318,7 @@
 				A48686902719B82A00FA8530 /* StartPage.swift in Sources */,
 				AB317DA2271978DA007172CE /* MainView.swift in Sources */,
 				A486868227196A1800FA8530 /* MedScannerApp.swift in Sources */,
+				498CC42A271AC7F400EC743C /* View+extensions.swift in Sources */,
 				A48686962719CAA600FA8530 /* CameraCooridnator.swift in Sources */,
 				AB317DAE271ACA54007172CE /* MedicineCell.swift in Sources */,
 				49429A202719787000DA98F6 /* Endpoint.swift in Sources */,
@@ -313,6 +328,7 @@
 				49429A1E271977E500DA98F6 /* NetworkClient.swift in Sources */,
 				A48686932719BD4000FA8530 /* ImagePickerView.swift in Sources */,
 				AB317DA72719CBEF007172CE /* MedicineList.swift in Sources */,
+				498CC425271AB7EE00EC743C /* SearchBar.swift in Sources */,
 				AB317DB0271ACE24007172CE /* TextExtention.swift in Sources */,
 				A486869D2719D46500FA8530 /* CaptureButtonView.swift in Sources */,
 				AB317DA92719CC42007172CE /* UserDefaultExtention.swift in Sources */,
