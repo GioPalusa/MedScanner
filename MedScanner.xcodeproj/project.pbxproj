@@ -27,6 +27,9 @@
 		AB317DA2271978DA007172CE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB317DA1271978DA007172CE /* MainView.swift */; };
 		AB317DA72719CBEF007172CE /* MedicineList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB317DA62719CBEF007172CE /* MedicineList.swift */; };
 		AB317DA92719CC42007172CE /* UserDefaultExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB317DA82719CC42007172CE /* UserDefaultExtention.swift */; };
+		AB317DAB271AC1D7007172CE /* UIColorExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB317DAA271AC1D7007172CE /* UIColorExtention.swift */; };
+		AB317DAE271ACA54007172CE /* MedicineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB317DAD271ACA54007172CE /* MedicineCell.swift */; };
+		AB317DB0271ACE24007172CE /* TextExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB317DAF271ACE24007172CE /* TextExtention.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +54,9 @@
 		AB317DA1271978DA007172CE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		AB317DA62719CBEF007172CE /* MedicineList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineList.swift; sourceTree = "<group>"; };
 		AB317DA82719CC42007172CE /* UserDefaultExtention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultExtention.swift; sourceTree = "<group>"; };
+		AB317DAA271AC1D7007172CE /* UIColorExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtention.swift; sourceTree = "<group>"; };
+		AB317DAD271ACA54007172CE /* MedicineCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineCell.swift; sourceTree = "<group>"; };
+		AB317DAF271ACE24007172CE /* TextExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextExtention.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +82,7 @@
 		49429A192719708D00DA98F6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AB317DAC271ACA26007172CE /* Cells */,
 				A48686972719D35300FA8530 /* CameraViews */,
 				4992AEBE2719C47200CAE610 /* ViewModels */,
 				A486868127196A1800FA8530 /* MedScannerApp.swift */,
@@ -199,8 +206,18 @@
 			isa = PBXGroup;
 			children = (
 				AB317DA82719CC42007172CE /* UserDefaultExtention.swift */,
+				AB317DAA271AC1D7007172CE /* UIColorExtention.swift */,
+				AB317DAF271ACE24007172CE /* TextExtention.swift */,
 			);
 			path = Extentions;
+			sourceTree = "<group>";
+		};
+		AB317DAC271ACA26007172CE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				AB317DAD271ACA54007172CE /* MedicineCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,12 +300,15 @@
 				AB317DA2271978DA007172CE /* MainView.swift in Sources */,
 				A486868227196A1800FA8530 /* MedScannerApp.swift in Sources */,
 				A48686962719CAA600FA8530 /* CameraCooridnator.swift in Sources */,
+				AB317DAE271ACA54007172CE /* MedicineCell.swift in Sources */,
 				49429A202719787000DA98F6 /* Endpoint.swift in Sources */,
+				AB317DAB271AC1D7007172CE /* UIColorExtention.swift in Sources */,
 				A486869F2719D4A700FA8530 /* CustomCameraController.swift in Sources */,
 				49429A2327197B4000DA98F6 /* HTTPMethod.swift in Sources */,
 				49429A1E271977E500DA98F6 /* NetworkClient.swift in Sources */,
 				A48686932719BD4000FA8530 /* ImagePickerView.swift in Sources */,
 				AB317DA72719CBEF007172CE /* MedicineList.swift in Sources */,
+				AB317DB0271ACE24007172CE /* TextExtention.swift in Sources */,
 				A486869D2719D46500FA8530 /* CaptureButtonView.swift in Sources */,
 				AB317DA92719CC42007172CE /* UserDefaultExtention.swift in Sources */,
 			);

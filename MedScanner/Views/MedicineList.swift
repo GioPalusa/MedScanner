@@ -13,8 +13,8 @@ struct MedicineList: View {
             ScrollView(.vertical, showsIndicators: true) {
                 LazyVStack {
                     ForEach(1...100, id: \.self) { value in
-                        Text("Row \(value)")
-                    }.frame(width: .infinity, height: 200)
+                        MedicineCell()
+                    }.frame(width: .infinity, height: 100)
                 }
             }
             .navigationTitle("Min lista")
