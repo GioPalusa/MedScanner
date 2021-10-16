@@ -10,7 +10,11 @@ import UIKit
 
 struct StartPage: View {
     var body: some View {
-        Text("Start page")
+        VStack {
+            CustomCameraRepresentable(cameraFrame: CGRect(x: 0, y: 0, width: 300, height: 300), imageCompletion: { image in
+
+            })
+        }
     }
 }
 

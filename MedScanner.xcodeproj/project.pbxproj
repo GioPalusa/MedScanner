@@ -25,6 +25,7 @@
 		A486869B2719D42900FA8530 /* CustomCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A486869A2719D42900FA8530 /* CustomCameraView.swift */; };
 		A486869D2719D46500FA8530 /* CaptureButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A486869C2719D46500FA8530 /* CaptureButtonView.swift */; };
 		A486869F2719D4A700FA8530 /* CustomCameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A486869E2719D4A700FA8530 /* CustomCameraController.swift */; };
+		A48686A1271AB4F900FA8530 /* CustomCameraRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48686A0271AB4F900FA8530 /* CustomCameraRepresentable.swift */; };
 		AB317DA2271978DA007172CE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB317DA1271978DA007172CE /* MainView.swift */; };
 		AB317DA72719CBEF007172CE /* MedicineList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB317DA62719CBEF007172CE /* MedicineList.swift */; };
 		AB317DA92719CC42007172CE /* UserDefaultExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB317DA82719CC42007172CE /* UserDefaultExtention.swift */; };
@@ -50,6 +51,7 @@
 		A486869A2719D42900FA8530 /* CustomCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCameraView.swift; sourceTree = "<group>"; };
 		A486869C2719D46500FA8530 /* CaptureButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureButtonView.swift; sourceTree = "<group>"; };
 		A486869E2719D4A700FA8530 /* CustomCameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCameraController.swift; sourceTree = "<group>"; };
+		A48686A0271AB4F900FA8530 /* CustomCameraRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCameraRepresentable.swift; sourceTree = "<group>"; };
 		AB317DA1271978DA007172CE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		AB317DA62719CBEF007172CE /* MedicineList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineList.swift; sourceTree = "<group>"; };
 		AB317DA82719CC42007172CE /* UserDefaultExtention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultExtention.swift; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				A48686922719BD4000FA8530 /* ImagePickerView.swift */,
+				A48686A0271AB4F900FA8530 /* CustomCameraRepresentable.swift */,
 			);
 			path = ViewControllerRepresentable;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 			files = (
 				A486869B2719D42900FA8530 /* CustomCameraView.swift in Sources */,
 				49429A2527197B5300DA98F6 /* HTTPTask.swift in Sources */,
+				A48686A1271AB4F900FA8530 /* CustomCameraRepresentable.swift in Sources */,
 				4992AEBA2719891300CAE610 /* NetworkError.swift in Sources */,
 				498CC41F2719CC7B00EC743C /* LocalStorage.swift in Sources */,
 				4992AEBC271989DE00CAE610 /* MedRepository.swift in Sources */,
