@@ -13,41 +13,7 @@ struct MedicineList: View {
             ScrollView(.vertical, showsIndicators: true) {
                 LazyVStack {
                     ForEach(1...100, id: \.self) { value in
-                        ZStack(alignment: .leading) {
-                                    
-                                    Color.red
-                                    HStack {
-                        
-                                        
-                                        VStack(alignment: .leading) {
-                                            Text("Name")
-                                                .font(.headline)
-                                                .fontWeight(.bold)
-                                                .lineLimit(2)
-                                            
-                                            Text("address")
-                                                .padding(.bottom, 5)
-                                            
-                                            
-                                       
-                                            
-                                    
-                                            .padding(.bottom, 5)
-                                            
-                                
-                                            
-                                        }
-                                        .padding(.horizontal, 5)
-                                        
-                                        Spacer()
-                                        Button(action: { }){
-                                            Image(systemName: "chevron.right").tint(Color.gray)
-                                                .font(.body)
-                                                            }
-                                    }
-                                    .padding(15)
-                                }
-                                .clipShape(RoundedRectangle(cornerRadius: 15))
+                        MedicineCell()
                     }.frame(width: .infinity, height: 100)
                 }
             }

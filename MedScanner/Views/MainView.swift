@@ -16,10 +16,7 @@ struct MainView: View {
             
             switch viewRoute.currentPage {
             case .home:
-                VStack {
-                    Text("Home")
-                    EmptyView()
-                }
+                StartPage()
             case .search:
                 VStack {
                     MedicineList()

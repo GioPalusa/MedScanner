@@ -9,11 +9,32 @@ import SwiftUI
 import UIKit
 
 struct StartPage: View {
-    var body: some View {
-        VStack {
-            CustomCameraRepresentable(cameraFrame: CGRect(x: 0, y: 0, width: 300, height: 300), imageCompletion: { image in
+    @State private var image: UIImage?
+    var customCameraRepresentable = CustomCameraRepresentable(
+        cameraFrame: .zero,
+        imageCompletion: { _ in }
+    )
 
-            })
+    var body: some View {
+        CustomCameraView(
+            customCameraRepresentable: customCameraRepresentable,
+            imageCompletion: { newImage in
+                self.image = newImage
+            }
+        )
+            .frame(width: 200, height: 300)
+            .onAppear {
+                customCameraRepresentable.startRunningCaptureSession()
+            }
+            .onDisappear {
+                customCameraRepresentable.stopRunningCaptureSession()
+            }
+
+        if let image = image {
+            Image(uiImage: image)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 20, height: 20)
         }
     }
 }
