@@ -14,14 +14,8 @@ struct CustomCameraView: View {
     var body: some View {
         GeometryReader { geometry in
             VStack {
-                let frame = CGRect(x: 0, y: 0, width: geometry.size.width, height: geometry.size.height - 100)
+                let frame = CGRect(x: 0, y: 0, width: geometry.size.width, height: geometry.size.height)
                 cameraView(frame: frame)
-
-                HStack {
-                    CameraControlsView(captureButtonAction: { [weak customCameraRepresentable] in
-                        customCameraRepresentable?.takePhoto()
-                    })
-                }
             }
         }
     }

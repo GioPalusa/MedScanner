@@ -8,6 +8,8 @@
 import SwiftUI
 import UIKit
 
+// MARK: - StartPage
+
 struct StartPage: View {
     @State private var image: UIImage?
     var customCameraRepresentable = CustomCameraRepresentable(
@@ -26,18 +28,20 @@ struct StartPage: View {
                 self.image = newImage
             }
         )
-            .frame(height: 300)
-            .onAppear {
-                customCameraRepresentable.startRunningCaptureSession()
-            }
-            .onDisappear {
-                customCameraRepresentable.stopRunningCaptureSession()
-            }
+        .cornerRadius(26)
+        .frame(height: 300)
+        .padding(32)
+        .onAppear {
+            customCameraRepresentable.startRunningCaptureSession()
+        }
+        .onDisappear {
+            customCameraRepresentable.stopRunningCaptureSession()
+        }
     }
 
     var searchView: some View {
         SearchBar(text: $searchText, focusedField: $isFocused)
-            .onChange(of: searchText) { newValue in
+            .onChange(of: searchText) { _ in
                 // TODO: Handle new value
             }
             .onChange(of: isFocused) { newValue in
@@ -53,10 +57,15 @@ struct StartPage: View {
             searchView
 
             Spacer()
+            if presentCameraFrame {
+                CaptureButtonView()
+            }
         }
         .background(Color.custom(.background))
     }
 }
+
+// MARK: - StartPage_Previews
 
 struct StartPage_Previews: PreviewProvider {
     static var previews: some View {
