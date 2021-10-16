@@ -15,10 +15,16 @@ struct SearchBar: View {
 
     var body: some View {
         HStack {
-            TextField("Search ...", text: $text)
+            TextField("", text: $text)
+                .placeholder(when: text.isEmpty,
+                             placeholder: {
+                    Text("Search...")
+                        .foregroundColor(.custom(.tint))
+                })
                 .padding(7)
                 .padding(.horizontal, 25)
-                .background(Color(.systemGray6))
+                .background(Color.custom(.secondaryBackground))
+                .foregroundColor(.custom(.tint))
                 .cornerRadius(8)
                 .padding(.horizontal, 10)
                 .onTapGesture {
@@ -29,11 +35,13 @@ struct SearchBar: View {
             if isEditing {
                 Button(action: {
                     self.isEditing = false
+                    self.text = ""
                     dismissKeyboard()
                 }) {
                     Text("Cancel")
                 }
                 .padding(.trailing, 10)
+                .foregroundColor(.custom(.tint))
                 .transition(.move(edge: .trailing))
                 .animation(.default, value: !isEditing)
             }

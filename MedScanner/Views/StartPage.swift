@@ -19,33 +19,42 @@ struct StartPage: View {
     @State private var searchText = String()
     @State private var presentCameraFrame = true
 
+    var viewFrame: some View {
+        CustomCameraView(
+            customCameraRepresentable: customCameraRepresentable,
+            imageCompletion: { newImage in
+                self.image = newImage
+            }
+        )
+            .frame(height: 300)
+            .onAppear {
+                customCameraRepresentable.startRunningCaptureSession()
+            }
+            .onDisappear {
+                customCameraRepresentable.stopRunningCaptureSession()
+            }
+    }
+
+    var searchView: some View {
+        SearchBar(text: $searchText, focusedField: $isFocused)
+            .onChange(of: searchText) { newValue in
+                // TODO: Handle new value
+            }
+            .onChange(of: isFocused) { newValue in
+                withAnimation { presentCameraFrame = !newValue }
+            }
+    }
+
     var body: some View {
         VStack(spacing: 16) {
             if presentCameraFrame {
-                CustomCameraView(
-                    customCameraRepresentable: customCameraRepresentable,
-                    imageCompletion: { newImage in
-                        self.image = newImage
-                    }
-                )
-                    .frame(height: 300)
-                    .onAppear {
-                        customCameraRepresentable.startRunningCaptureSession()
-                    }
-                    .onDisappear {
-                        customCameraRepresentable.stopRunningCaptureSession()
-                    }
+                viewFrame
             }
-            SearchBar(text: $searchText, focusedField: $isFocused)
-                .onChange(of: searchText) { newValue in
-                    // TODO: Handle new value
-                }
-                .onChange(of: isFocused) { newValue in
-                    withAnimation { presentCameraFrame = !newValue }
-                }
+            searchView
 
             Spacer()
         }
+        .background(Color.custom(.background))
     }
 }
 

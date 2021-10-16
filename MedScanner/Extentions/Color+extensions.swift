@@ -23,7 +23,7 @@ extension Color {
             case .background: return Color(uiColor: UIColor(hexString: "191B1C"))
             case .secondaryBackground: return Color(uiColor: UIColor(hexString: "232A31"))
             case .tabMenu: return Color(uiColor: UIColor(hexString: "18171C"))
-            case .tint: return Color(uiColor: UIColor(hexString: "49999CC"))
+            case .tint: return Color(uiColor: UIColor(hexString: "4999CC"))
             case .doped: return Color(uiColor: UIColor(hexString: "FF1717"))
             case .approved: return Color(uiColor: UIColor(hexString: "2CB039"))
             case .error: return Color(uiColor: UIColor(hexString: "FF4949"))

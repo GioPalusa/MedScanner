@@ -16,28 +16,17 @@ struct MainView: View {
             
             switch viewRoute.currentPage {
             case .home: StartPage()
-            case .search:
-                VStack {
-                    MedicineList()
-                }
-                
-            case .favourites:
-                VStack {
-                    Text("favorites")
-                    EmptyView()
-                }
+            case .favourites: MedicineList()
             }
-            Spacer()
             
             HStack(spacing: 100) {
                 TabButton(page: .home)
                 TabButton(page: .favourites)
-                TabButton(page: .search)
             }
             .padding(.top)
             .frame(maxWidth: .infinity)
             .background(
-                Color.gray.opacity(0.15)
+                Color.custom(.tabMenu)
                     .ignoresSafeArea()
             )
         }
@@ -47,9 +36,7 @@ struct MainView: View {
     func TabButton(page: Page) -> some View {
         
         Button {
-            withAnimation {
-                viewRoute.currentPage = page
-            }
+            viewRoute.currentPage = page
         } label: {
             Image(systemName: page.imageName)
                 .resizable()
@@ -86,14 +73,12 @@ class ViewRouter: ObservableObject {
 
 enum Page {
     case home
-    case search
     case favourites
     
     var imageName: String {
         switch self {
         case .home: return "house"
         case .favourites: return "plus.rectangle.on.folder"
-        case .search: return "person.crop.circle.fill.badge.plus"
         }
     }
 }
