@@ -5,7 +5,6 @@
 //  Created by Mert Avci on 2021-10-16.
 //
 
-import Foundation
 import UIKit
 
 
@@ -13,6 +12,7 @@ extension UIColor {
     static func background(opacity: CGFloat) -> UIColor {
         return UIColor(red: 177 / 255, green: 35 / 255, blue: 0 / 255, alpha: opacity / 100)
     }
+    
     
     convenience init(hexString: String) {
         let hex = hexString.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
