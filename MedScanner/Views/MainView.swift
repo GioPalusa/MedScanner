@@ -11,10 +11,6 @@ struct MainView: View {
     
     @StateObject var viewRoute = ViewRouter()
     
-    init(){
-        UITabBar.appearance().isHidden = true
-    }
-    
     var body: some View {
         VStack(spacing: 0) {
             

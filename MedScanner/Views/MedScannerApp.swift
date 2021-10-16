@@ -12,13 +12,9 @@ struct MedScannerApp: App {
     @Environment(\.scenePhase) var scenePhase
     @UIApplicationDelegateAdaptor(MedAppDelegate.self) private var appDelegate
 
-    init() {
-
-    }
-
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
         }.onChange(of: scenePhase) { newScenePhase in
             switch newScenePhase {
                 case .active:
