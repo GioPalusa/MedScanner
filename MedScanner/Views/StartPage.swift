@@ -58,7 +58,9 @@ struct StartPage: View {
 
             Spacer()
             if presentCameraFrame {
-                CaptureButtonView()
+                CameraControlsView(captureButtonAction: { [weak customCameraRepresentable] in
+                    customCameraRepresentable?.takePhoto()
+                })
             }
         }
         .background(Color.custom(.background))
