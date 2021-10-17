@@ -53,7 +53,7 @@ struct MedicineCell: View {
                             .font(.headline)
                             .fontWeight(.bold)
                             .lineLimit(2)
-                        Text(medicine.properties.content)
+                        Text(medicine.properties.substanceName.bsonType)
                         Text(medicine.properties.amount)
                             .fontWeight(.semibold)
 
@@ -79,9 +79,23 @@ struct MedicineCell_Previews: PreviewProvider {
     static var previews: some View {
         VStack {
             MedicineCell(isExpanded: false,
-                         medicine: DopingMed(title: "Alvedon", properties: Properties(id: ID(bsonType: ""), name: ID(bsonType: ""))))
+                         medicine: DopingMed(title: "-",
+                                             properties:
+                                                Properties(id: ID(bsonType: ""),
+                                                           medName: ID(bsonType: "Alvedon"),
+                                                           substanceName: ID(bsonType: "Paracetamol")
+                                                          )
+                                            )
+            )
             MedicineCell(isExpanded: false,
-                         medicine: DopingMed(title: "Alvedon", properties: Properties(id: ID(bsonType: ""), name: ID(bsonType: ""))))
+                         medicine: DopingMed(title: "-",
+                                             properties:
+                                                Properties(id: ID(bsonType: ""),
+                                                           medName: ID(bsonType: "Ipren"),
+                                                           substanceName: ID(bsonType: "Paracetamol")
+                                                          )
+                                            )
+            )
         }.frame(width: .infinity, height: 100)
     }
 }

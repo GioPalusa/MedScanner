@@ -45,11 +45,13 @@ struct MedicineList_Previews: PreviewProvider {
 
 var medicines: [DopingMed] {
     [
-        .init(title: "Alvedon",
-              properties: .init(id: ID(bsonType: ""), name: ID(bsonType: ""))),
-        .init(title: "Ipren",
-              properties: .init(id: ID(bsonType: ""), name: ID(bsonType: ""))),
-        .init(title: "Alvedon",
-              properties: .init(id: ID(bsonType: ""), name: ID(bsonType: "")))
+        .init(title: "-",
+              properties: Properties(id: ID(bsonType: ""),
+                                     medName: ID(bsonType: "Alvedon"),
+                                     substanceName: ID(bsonType: "Paracetamol"))),
+        .init(title: "-",
+              properties: Properties(id: ID(bsonType: ""),
+                                     medName: ID(bsonType: "Ipren"),
+                                     substanceName: ID(bsonType: "Ibuprofen")))
     ]
 }
