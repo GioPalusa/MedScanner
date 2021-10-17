@@ -9,8 +9,8 @@ import SwiftUI
 
 struct MedicineList: View {
     
-    @State private var selection: Set<Medicine> = []
-    var medicineList: [Medicine]
+    @State private var selection: Set<DopingMed> = []
+    var medicineList: [DopingMed]
     
     var body: some View {
         NavigationView {
@@ -26,7 +26,7 @@ struct MedicineList: View {
         }
     }
     
-    func selectDeselect(_ medicine: Medicine) {
+    private func selectDeselect(_ medicine: DopingMed) {
         if selection.contains(medicine) {
             selection.remove(medicine)
         } else {
@@ -43,55 +43,13 @@ struct MedicineList_Previews: PreviewProvider {
 
 
 
-var medicines: [Medicine] {
+var medicines: [DopingMed] {
     [
-        Medicine(name: "Alvedon",
-                 content: "Paracetamol",
-                 description: """
-Alvedon innehåller paracetamol som är
-smärtlindrande oh febernedsättande.
-
-Alvedon används för behandling av tillfälliga
-feber- och smärttillständ av lindrig art, t ex feber
-vid förkylning, huvudvärk, tandvärk,
-menstruationssmärtor, muskel- och ledvärk.
-
-Alvedon kan användas av personer med känslig
-mage eller magsär och personer med ökad
-blödningsbenägenhet.
-""",
-                 amount: "500 mg"),
-        Medicine(name: "Ipren",
-                 content: "Ibuprofen",
-                 description: """
-Alvedon innehåller paracetamol som är
-smärtlindrande oh febernedsättande.
-
-Alvedon används för behandling av tillfälliga
-feber- och smärttillständ av lindrig art, t ex feber
-vid förkylning, huvudvärk, tandvärk,
-menstruationssmärtor, muskel- och ledvärk.
-
-Alvedon kan användas av personer med känslig
-mage eller magsär och personer med ökad
-blödningsbenägenhet.
-""",
-                 amount: "500 mg"),
-        Medicine(name: "Pamol",
-                 content: "Lorem ipsum",
-                 description: """
-Alvedon innehåller paracetamol som är
-smärtlindrande oh febernedsättande.
-
-Alvedon används för behandling av tillfälliga
-feber- och smärttillständ av lindrig art, t ex feber
-vid förkylning, huvudvärk, tandvärk,
-menstruationssmärtor, muskel- och ledvärk.
-
-Alvedon kan användas av personer med känslig
-mage eller magsär och personer med ökad
-blödningsbenägenhet.
-""",
-                 amount: "500 mg")
+        .init(title: "Alvedon",
+              properties: .init(id: ID(bsonType: ""), name: ID(bsonType: ""))),
+        .init(title: "Ipren",
+              properties: .init(id: ID(bsonType: ""), name: ID(bsonType: ""))),
+        .init(title: "Alvedon",
+              properties: .init(id: ID(bsonType: ""), name: ID(bsonType: "")))
     ]
 }
