@@ -35,7 +35,7 @@ class MedRepository {
                     case .success(let user):
                         print("Login as \(user) succeeded!")
                         // Continue below
-                        self.openRealm()
+                        self.onRealmOpened()
                 }
             }
         }
@@ -45,7 +45,7 @@ class MedRepository {
     private func openRealm() {
         let user = app.currentUser!
         // The partition determines which subset of data to access.
-        let partitionValue = "DOPING_MEDS"
+        let partitionValue = "DOPING_MEDS.DOPING_MEDS_AND_SUBSTANCE"
         // Get a sync configuration from the user object.
         var configuration = user.configuration(partitionValue: partitionValue)
         // Open the realm asynchronously to ensure backend data is downloaded first.
@@ -56,16 +56,19 @@ class MedRepository {
                     // Handle error...
                 case .success(let realm):
                     // Realm opened
-                    self.onRealmOpened(realm)
+                    break
+                    // self.onRealmOpened(realm)
             }
         }
 
 
     }
 
-    private func onRealmOpened(_ realm: Realm) {
-//        let task = QsTask(name: "Do laundry")
-
+    private func onRealmOpened() {
+        let client = app.currentUser?.mongoClient("mongodb-atlas")
+        let db = client?.database(named: "DOPING_MEDS")
+        let collection = db?.collection(withName: "DOPING_MEDS_AND_SUBSTANCE")
+        dump(collection?.find(filter: Document()))
 
     }
 }
