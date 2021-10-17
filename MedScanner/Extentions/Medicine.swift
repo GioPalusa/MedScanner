@@ -7,9 +7,10 @@
 
 import Foundation
 
-
 struct Medicine: Identifiable, Hashable {
-    let id: UUID
+    let id: UUID = UUID()
     let name: String
+    let content: String
     let description: String
+    let amount: String
 }

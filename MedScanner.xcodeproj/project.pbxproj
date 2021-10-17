@@ -23,7 +23,7 @@
 		A486868227196A1800FA8530 /* MedScannerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A486868127196A1800FA8530 /* MedScannerApp.swift */; };
 		A486868627196A1C00FA8530 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A486868527196A1C00FA8530 /* Assets.xcassets */; };
 		A486868927196A1C00FA8530 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A486868827196A1C00FA8530 /* Preview Assets.xcassets */; };
-		A48686902719B82A00FA8530 /* StartPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A486868F2719B82A00FA8530 /* StartPage.swift */; };
+		A48686902719B82A00FA8530 /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A486868F2719B82A00FA8530 /* ScannerView.swift */; };
 		A48686932719BD4000FA8530 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48686922719BD4000FA8530 /* ImagePickerView.swift */; };
 		A48686962719CAA600FA8530 /* CameraCooridnator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48686952719CAA600FA8530 /* CameraCooridnator.swift */; };
 		A486869B2719D42900FA8530 /* CustomCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A486869A2719D42900FA8530 /* CustomCameraView.swift */; };
@@ -57,7 +57,7 @@
 		A486868127196A1800FA8530 /* MedScannerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedScannerApp.swift; sourceTree = "<group>"; };
 		A486868527196A1C00FA8530 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A486868827196A1C00FA8530 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		A486868F2719B82A00FA8530 /* StartPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPage.swift; sourceTree = "<group>"; };
+		A486868F2719B82A00FA8530 /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
 		A48686922719BD4000FA8530 /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImagePickerView.swift; path = MedScanner/ViewControllerRepresentable/ImagePickerView.swift; sourceTree = SOURCE_ROOT; };
 		A48686952719CAA600FA8530 /* CameraCooridnator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraCooridnator.swift; sourceTree = "<group>"; };
 		A486869A2719D42900FA8530 /* CustomCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCameraView.swift; sourceTree = "<group>"; };
@@ -111,7 +111,7 @@
 				4992AEBE2719C47200CAE610 /* ViewModels */,
 				A486868127196A1800FA8530 /* MedScannerApp.swift */,
 				AB317DA1271978DA007172CE /* MainView.swift */,
-				A486868F2719B82A00FA8530 /* StartPage.swift */,
+				A486868F2719B82A00FA8530 /* ScannerView.swift */,
 				AB317DA62719CBEF007172CE /* MedicineList.swift */,
 				49051E5F271AF29B00E2031C /* LaunchScreen.storyboard */,
 			);
@@ -339,7 +339,7 @@
 				4992AEBC271989DE00CAE610 /* MedRepository.swift in Sources */,
 				496F7F02271ACA4000A16DE5 /* Color+extensions.swift in Sources */,
 				AB317DB2271ADD85007172CE /* Medicine.swift in Sources */,
-				A48686902719B82A00FA8530 /* StartPage.swift in Sources */,
+				A48686902719B82A00FA8530 /* ScannerView.swift in Sources */,
 				AB317DA2271978DA007172CE /* MainView.swift in Sources */,
 				A486868227196A1800FA8530 /* MedScannerApp.swift in Sources */,
 				498CC42A271AC7F400EC743C /* View+extensions.swift in Sources */,

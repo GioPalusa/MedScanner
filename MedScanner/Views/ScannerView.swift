@@ -10,7 +10,7 @@ import UIKit
 
 // MARK: - StartPage
 
-struct StartPage: View {
+struct ScannerView: View {
     @StateObject private var scannerViewModel = ScannerViewModel()
 
     @FocusState private var isFocused: Bool
@@ -48,14 +48,25 @@ struct StartPage: View {
                 withAnimation { presentCameraFrame = !newValue }
             }
             .padding(.horizontal, isFocused ? 0 : 24)
-            .animation(.easeIn(duration: 0.3))
+            .animation(.easeIn(duration: 0.2))
     }
 
     var body: some View {
         VStack(spacing: 16) {
+            VStack(spacing: 0) {
+                HStack {
+                    Text("Skanna din medicin")
+                        .font(.subheadline)
+                        .foregroundColor(.white)
+                        .padding(.leading, 32)
+                        .offset(x: 0, y: 20)
+                    Spacer()
+                }
+                .opacity(presentCameraFrame ? 1 : 0)
             videoFrameView
                 .opacity(presentCameraFrame ? 1 : 0)
                 .frame(height: presentCameraFrame ? 300 : 0)
+            }
             searchView
 
             Spacer()
@@ -74,6 +85,6 @@ struct StartPage: View {
 
 struct StartPage_Previews: PreviewProvider {
     static var previews: some View {
-        StartPage()
+        ScannerView()
     }
 }
