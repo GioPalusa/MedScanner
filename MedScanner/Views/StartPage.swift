@@ -11,21 +11,22 @@ import UIKit
 // MARK: - StartPage
 
 struct StartPage: View {
-    @State private var image: UIImage?
+    @StateObject private var scannerViewModel = ScannerViewModel()
+
+    @FocusState private var isFocused: Bool
+    @State private var presentCameraFrame = true
+
     var customCameraRepresentable = CustomCameraRepresentable(
         cameraFrame: .zero,
         imageCompletion: { _ in }
     )
 
-    @FocusState private var isFocused: Bool
-    @State private var searchText = String()
-    @State private var presentCameraFrame = true
-
     var videoFrameView: some View {
         CustomCameraView(
             customCameraRepresentable: customCameraRepresentable,
             imageCompletion: { newImage in
-                self.image = newImage
+                // TODO: do something about the captured image
+                ()
             }
         )
         .cornerRadius(26)
@@ -36,13 +37,18 @@ struct StartPage: View {
     }
 
     var searchView: some View {
-        SearchBar(text: $searchText, focusedField: $isFocused)
-            .onChange(of: searchText) { _ in
-                // TODO: Handle new value
-            }
+        SearchBar(text: $scannerViewModel.searchedString, focusedField: $isFocused)
             .onChange(of: isFocused) { newValue in
+                if newValue {
+                    scannerViewModel.searchedString = scannerViewModel.lastSearchedText
+                } else  {
+                    scannerViewModel.lastSearchedText = scannerViewModel.searchedString
+                    scannerViewModel.searchedString = ""
+                }
                 withAnimation { presentCameraFrame = !newValue }
             }
+            .padding(.horizontal, isFocused ? 0 : 24)
+            .animation(.easeIn(duration: 0.3))
     }
 
     var body: some View {

@@ -35,7 +35,6 @@ struct SearchBar: View {
             if isEditing {
                 Button(action: {
                     self.isEditing = false
-                    self.text = ""
                     dismissKeyboard()
                 }) {
                     Text("Cancel")

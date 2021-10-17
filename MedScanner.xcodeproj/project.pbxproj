@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		49051E60271AF29B00E2031C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49051E5F271AF29B00E2031C /* LaunchScreen.storyboard */; };
 		49051E63271AFEFC00E2031C /* ViewDidLoadModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49051E62271AFEFC00E2031C /* ViewDidLoadModifier.swift */; };
+		49327B7C271C0225000BA92A /* ScannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49327B7B271C0225000BA92A /* ScannerViewModel.swift */; };
 		49429A1E271977E500DA98F6 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49429A1D271977E500DA98F6 /* NetworkClient.swift */; };
 		49429A202719787000DA98F6 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49429A1F2719787000DA98F6 /* Endpoint.swift */; };
 		49429A2327197B4000DA98F6 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49429A2227197B4000DA98F6 /* HTTPMethod.swift */; };
@@ -41,6 +42,7 @@
 /* Begin PBXFileReference section */
 		49051E5F271AF29B00E2031C /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49051E62271AFEFC00E2031C /* ViewDidLoadModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDidLoadModifier.swift; sourceTree = "<group>"; };
+		49327B7B271C0225000BA92A /* ScannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewModel.swift; sourceTree = "<group>"; };
 		49429A1D271977E500DA98F6 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		49429A1F2719787000DA98F6 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		49429A2227197B4000DA98F6 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 		4992AEBE2719C47200CAE610 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				49327B7B271C0225000BA92A /* ScannerViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 				AB317DA2271978DA007172CE /* MainView.swift in Sources */,
 				A486868227196A1800FA8530 /* MedScannerApp.swift in Sources */,
 				498CC42A271AC7F400EC743C /* View+extensions.swift in Sources */,
+				49327B7C271C0225000BA92A /* ScannerViewModel.swift in Sources */,
 				A48686962719CAA600FA8530 /* CameraCooridnator.swift in Sources */,
 				AB317DAE271ACA54007172CE /* MedicineCell.swift in Sources */,
 				49429A202719787000DA98F6 /* Endpoint.swift in Sources */,
