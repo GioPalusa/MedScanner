@@ -67,6 +67,9 @@ struct StartPage: View {
             }
         }
         .background(Color.custom(.background))
+        .task {
+            try! await MedRepository().getDBCollection()
+        }
     }
 }
 

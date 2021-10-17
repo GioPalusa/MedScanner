@@ -26,4 +26,8 @@ class ScannerViewModel: ObservableObject {
     private func search(for medicine: String) {
 
     }
+
+    private func fetch() async {
+        
+    }
 }

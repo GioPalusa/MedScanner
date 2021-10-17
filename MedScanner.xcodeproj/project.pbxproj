@@ -30,8 +30,8 @@
 		A486869D2719D46500FA8530 /* CaptureButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A486869C2719D46500FA8530 /* CaptureButtonView.swift */; };
 		A486869F2719D4A700FA8530 /* CustomCameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A486869E2719D4A700FA8530 /* CustomCameraController.swift */; };
 		A48686A1271AB4F900FA8530 /* CustomCameraRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48686A0271AB4F900FA8530 /* CustomCameraRepresentable.swift */; };
-		A48686A5271BFF8700FA8530 /* MongoSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A48686A4271BFF8700FA8530 /* MongoSwift */; };
-		A48686A7271BFF8700FA8530 /* MongoSwiftSync in Frameworks */ = {isa = PBXBuildFile; productRef = A48686A6271BFF8700FA8530 /* MongoSwiftSync */; };
+		A48686AA271C191C00FA8530 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = A48686A9271C191C00FA8530 /* Realm */; };
+		A48686AC271C191C00FA8530 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A48686AB271C191C00FA8530 /* RealmSwift */; };
 		AB317DA2271978DA007172CE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB317DA1271978DA007172CE /* MainView.swift */; };
 		AB317DA72719CBEF007172CE /* MedicineList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB317DA62719CBEF007172CE /* MedicineList.swift */; };
 		AB317DA92719CC42007172CE /* UserDefaultExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB317DA82719CC42007172CE /* UserDefaultExtention.swift */; };
@@ -81,8 +81,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A48686A7271BFF8700FA8530 /* MongoSwiftSync in Frameworks */,
-				A48686A5271BFF8700FA8530 /* MongoSwift in Frameworks */,
+				A48686AC271C191C00FA8530 /* RealmSwift in Frameworks */,
+				A48686AA271C191C00FA8530 /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,8 +280,8 @@
 			);
 			name = MedScanner;
 			packageProductDependencies = (
-				A48686A4271BFF8700FA8530 /* MongoSwift */,
-				A48686A6271BFF8700FA8530 /* MongoSwiftSync */,
+				A48686A9271C191C00FA8530 /* Realm */,
+				A48686AB271C191C00FA8530 /* RealmSwift */,
 			);
 			productName = MedScanner;
 			productReference = A486867E27196A1800FA8530 /* MedScanner.app */;
@@ -312,7 +312,7 @@
 			);
 			mainGroup = A486867527196A1700FA8530;
 			packageReferences = (
-				A48686A3271BFF8700FA8530 /* XCRemoteSwiftPackageReference "mongo-swift-driver" */,
+				A48686A8271C191C00FA8530 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
 			);
 			productRefGroup = A486867F27196A1800FA8530 /* Products */;
 			projectDirPath = "";
@@ -584,26 +584,26 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		A48686A3271BFF8700FA8530 /* XCRemoteSwiftPackageReference "mongo-swift-driver" */ = {
+		A48686A8271C191C00FA8530 /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/mongodb/mongo-swift-driver";
+			repositoryURL = "https://github.com/realm/realm-cocoa.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
+				minimumVersion = 5.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		A48686A4271BFF8700FA8530 /* MongoSwift */ = {
+		A48686A9271C191C00FA8530 /* Realm */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A48686A3271BFF8700FA8530 /* XCRemoteSwiftPackageReference "mongo-swift-driver" */;
-			productName = MongoSwift;
+			package = A48686A8271C191C00FA8530 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
 		};
-		A48686A6271BFF8700FA8530 /* MongoSwiftSync */ = {
+		A48686AB271C191C00FA8530 /* RealmSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A48686A3271BFF8700FA8530 /* XCRemoteSwiftPackageReference "mongo-swift-driver" */;
-			productName = MongoSwiftSync;
+			package = A48686A8271C191C00FA8530 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
