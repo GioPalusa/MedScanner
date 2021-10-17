@@ -59,6 +59,8 @@ class MedRepository {
                     self.onRealmOpened(realm)
             }
         }
+
+
     }
 
     private func onRealmOpened(_ realm: Realm) {

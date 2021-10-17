@@ -21,8 +21,8 @@ struct DopingMed: Identifiable, Codable, Hashable {
 
 // MARK: - Properties
 struct Properties: Codable, Hashable {
-    let id, name: ID
-    let content: String = "Paracetamol"
+    let id, medName: ID
+    let substanceName: ID
     let description: String = """
 Alvedon innehåller paracetamol som är
 smärtlindrande oh febernedsättande.
@@ -40,7 +40,8 @@ blödningsbenägenhet.
 
     enum CodingKeys: String, CodingKey {
         case id = "_id"
-        case name
+        case medName = "med_name"
+        case substanceName = "substance_name"
     }
 }
 
