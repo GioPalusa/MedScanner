@@ -10,10 +10,12 @@ import Combine
 
 class ScannerViewModel: ObservableObject {
     @Published var searchedString: String = ""
-    @Published var searchResult: [DopingMed] = []
+    @Published var searchResult: [Med] = []
+
+    private var allMeds: [Med] = []
 
     private var lastSearchedText = ""
-    private var lastSearchedResult: [DopingMed] = []
+    private var lastSearchedResult: [Med] = []
     private var subscriptions: Set<AnyCancellable> = []
 
     init() {
@@ -28,7 +30,8 @@ class ScannerViewModel: ObservableObject {
                 }
                 return $0
             }
-            .sink { self.search(for: $0) }
+            .sink {
+                self.search(for: $0) }
             .store(in: &subscriptions)
     }
 
@@ -43,8 +46,24 @@ class ScannerViewModel: ObservableObject {
         }
     }
 
+    func parseJSON() {
+        guard let url = Bundle.main.url(forResource: "Untitled", withExtension: "json") else { return }
+        guard let data = try? Data(contentsOf: url) else { return }
+        do {
+            let dopingMeds = try JSONDecoder().decode(DopingMed.self, from: data)
+            allMeds = dopingMeds.meds
+        } catch {
+            print("Failed to decode: \(error)")
+        }
+    }
+
     private func search(for medicine: String) {
-        searchResult = medicines
+       let filteredResult = self.allMeds.filter {
+           $0.medName.range(of: medicine, options: .caseInsensitive) != nil ||
+           $0.substanceName.range(of: medicine, options: .caseInsensitive) != nil
+        }
+
+        self.searchResult = filteredResult
     }
 
     private func fetch() async {

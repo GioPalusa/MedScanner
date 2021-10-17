@@ -10,7 +10,7 @@ import SwiftUI
 struct MedicineCell: View {
     
     let isExpanded: Bool
-    let medicine: DopingMed
+    let medicine: Med
 
     var expandedView: some View {
         HStack {
@@ -24,7 +24,7 @@ struct MedicineCell: View {
                 }
                 .foregroundColor(.custom(.approved))
 
-                Text(medicine.properties.description)
+                Text(medicine.description)
 
                 //                HStack(spacing: 20) {
                 //                    Image("plus_sign_icon")
@@ -49,12 +49,12 @@ struct MedicineCell: View {
             VStack {
                 HStack {
                     VStack(alignment: .leading) {
-                        Text(medicine.properties.medName.bsonType)
+                        Text(medicine.medName)
                             .font(.headline)
                             .fontWeight(.bold)
                             .lineLimit(2)
-                        Text(medicine.properties.substanceName.bsonType)
-                        Text(medicine.properties.amount)
+                        Text(medicine.substanceName)
+                        Text(medicine.amount)
                             .fontWeight(.semibold)
 
                         if isExpanded {
@@ -75,27 +75,27 @@ struct MedicineCell: View {
     }
 }
 
-struct MedicineCell_Previews: PreviewProvider {
-    static var previews: some View {
-        VStack {
-            MedicineCell(isExpanded: false,
-                         medicine: DopingMed(title: "-",
-                                             properties:
-                                                Properties(id: ID(bsonType: ""),
-                                                           medName: ID(bsonType: "Alvedon"),
-                                                           substanceName: ID(bsonType: "Paracetamol")
-                                                          )
-                                            )
-            )
-            MedicineCell(isExpanded: false,
-                         medicine: DopingMed(title: "-",
-                                             properties:
-                                                Properties(id: ID(bsonType: ""),
-                                                           medName: ID(bsonType: "Ipren"),
-                                                           substanceName: ID(bsonType: "Paracetamol")
-                                                          )
-                                            )
-            )
-        }.frame(width: .infinity, height: 100)
-    }
-}
+//struct MedicineCell_Previews: PreviewProvider {
+//    static var previews: some View {
+//        VStack {
+//            MedicineCell(isExpanded: false,
+//                         medicine: DopingMed(title: "-",
+//                                             properties:
+//                                                Properties(id: ID(bsonType: ""),
+//                                                           medName: ID(bsonType: "Alvedon"),
+//                                                           substanceName: ID(bsonType: "Paracetamol")
+//                                                          )
+//                                            )
+//            )
+//            MedicineCell(isExpanded: false,
+//                         medicine: DopingMed(title: "-",
+//                                             properties:
+//                                                Properties(id: ID(bsonType: ""),
+//                                                           medName: ID(bsonType: "Ipren"),
+//                                                           substanceName: ID(bsonType: "Paracetamol")
+//                                                          )
+//                                            )
+//            )
+//        }.frame(width: .infinity, height: 100)
+//    }
+//}

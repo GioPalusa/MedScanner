@@ -15,7 +15,7 @@ struct ScannerView: View {
 
     @FocusState private var isFocused: Bool
     @State private var presentCameraFrame = true
-    @State private var selection: Set<DopingMed> = []
+    @State private var selection: Set<Med> = []
 
     var customCameraRepresentable = CustomCameraRepresentable(
         cameraFrame: .zero,
@@ -94,9 +94,12 @@ struct ScannerView: View {
         .task {
             try! await MedRepository().getDBCollection()
         }
+        .onViewDidLoad {
+            scannerViewModel.parseJSON()
+        }
     }
 
-    private func selectDeselect(_ medicine: DopingMed) {
+    private func selectDeselect(_ medicine: Med) {
         if selection.contains(medicine) {
             selection.remove(medicine)
         } else {

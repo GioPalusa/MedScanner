@@ -20,6 +20,7 @@
 		498CC42A271AC7F400EC743C /* View+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498CC429271AC7F400EC743C /* View+extensions.swift */; };
 		4992AEBA2719891300CAE610 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4992AEB92719891300CAE610 /* NetworkError.swift */; };
 		4992AEBC271989DE00CAE610 /* MedRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4992AEBB271989DE00CAE610 /* MedRepository.swift */; };
+		49ED0A48271C40D2000C9AF8 /* Untitled.json in Resources */ = {isa = PBXBuildFile; fileRef = 49ED0A47271C40D1000C9AF8 /* Untitled.json */; };
 		A486868227196A1800FA8530 /* MedScannerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A486868127196A1800FA8530 /* MedScannerApp.swift */; };
 		A486868627196A1C00FA8530 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A486868527196A1C00FA8530 /* Assets.xcassets */; };
 		A486868927196A1C00FA8530 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A486868827196A1C00FA8530 /* Preview Assets.xcassets */; };
@@ -55,6 +56,7 @@
 		498CC429271AC7F400EC743C /* View+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+extensions.swift"; sourceTree = "<group>"; };
 		4992AEB92719891300CAE610 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		4992AEBB271989DE00CAE610 /* MedRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedRepository.swift; sourceTree = "<group>"; };
+		49ED0A47271C40D1000C9AF8 /* Untitled.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Untitled.json; sourceTree = "<group>"; };
 		A486867E27196A1800FA8530 /* MedScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A486868127196A1800FA8530 /* MedScannerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedScannerApp.swift; sourceTree = "<group>"; };
 		A486868527196A1C00FA8530 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 		49429A182719708800DA98F6 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				49ED0A47271C40D1000C9AF8 /* Untitled.json */,
 				49429A1B271970A400DA98F6 /* Wrappers */,
 				498CC41E2719CC7B00EC743C /* LocalStorage.swift */,
 			);
@@ -330,6 +333,7 @@
 			files = (
 				49051E60271AF29B00E2031C /* LaunchScreen.storyboard in Resources */,
 				A486868927196A1C00FA8530 /* Preview Assets.xcassets in Resources */,
+				49ED0A48271C40D2000C9AF8 /* Untitled.json in Resources */,
 				A486868627196A1C00FA8530 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

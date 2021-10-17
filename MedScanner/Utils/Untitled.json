@@ -1,0 +1,825 @@
+{
+	"meds": [{
+		"substance_name": "Acetazolamid",
+		"med_name": "Diamox"
+	}, {
+		"substance_name": "Adrenalin",
+		"med_name": "Adrenalin"
+	}, {
+		"substance_name": "Adrenalin",
+		"med_name": "Anapen"
+	}, {
+		"substance_name": "Adrenalin",
+		"med_name": "Anapen Junior "
+	}, {
+		"substance_name": "Adrenalin",
+		"med_name": "EpiPen "
+	}, {
+		"substance_name": "Adrenalin",
+		"med_name": "EpiPen JR "
+	}, {
+		"substance_name": "Albumin",
+		"med_name": "Albumin"
+	}, {
+		"substance_name": "Albumin",
+		"med_name": "Albumin"
+	}, {
+		"substance_name": "Albumin",
+		"med_name": "Albunorm"
+	}, {
+		"substance_name": "Albumin",
+		"med_name": "Flexbumin"
+	}, {
+		"substance_name": "Albumin",
+		"med_name": "Octaplas"
+	}, {
+		"substance_name": "Alfentanil",
+		"med_name": "Rapifen"
+	}, {
+		"substance_name": "Amilorid",
+		"med_name": "Amiloferm"
+	}, {
+		"substance_name": "Amilorid",
+		"med_name": "Amiloferm mite"
+	}, {
+		"substance_name": "Amilorid",
+		"med_name": "Amilorid"
+	}, {
+		"substance_name": "Amilorid",
+		"med_name": "Moduretic"
+	}, {
+		"substance_name": "Amilorid",
+		"med_name": "Moduretic mite"
+	}, {
+		"substance_name": "Amilorid",
+		"med_name": "Normorix"
+	}, {
+		"substance_name": "Amilorid",
+		"med_name": "Normorix mite"
+	}, {
+		"substance_name": "Amilorid",
+		"med_name": "Sparkal"
+	}, {
+		"substance_name": "Amilorid",
+		"med_name": "Sparkal mite"
+	}, {
+		"substance_name": "Anastrozol",
+		"med_name": "Anastelb"
+	}, {
+		"substance_name": "Anastrozol",
+		"med_name": "Anastrozol"
+	}, {
+		"substance_name": "Anastrozol",
+		"med_name": "Arimidex"
+	}, {
+		"substance_name": "Bambuterol",
+		"med_name": "Bambec"
+	}, {
+		"substance_name": "Betametason",
+		"med_name": "Betapred "
+	}, {
+		"substance_name": "Betametason",
+		"med_name": "Celeston Bifas "
+	}, {
+		"substance_name": "Budesonid",
+		"med_name": "Budenofalk"
+	}, {
+		"substance_name": "Budesonid",
+		"med_name": "Entocir"
+	}, {
+		"substance_name": "Budesonid",
+		"med_name": "Entocord"
+	}, {
+		"substance_name": "Budesonid",
+		"med_name": "Entocort"
+	}, {
+		"substance_name": "Bumetanid",
+		"med_name": "Burinex"
+	}, {
+		"substance_name": "Buprenorfin",
+		"med_name": "Buprenorfin"
+	}, {
+		"substance_name": "Buprenorfin",
+		"med_name": "norphine"
+	}, {
+		"substance_name": "Buprenorfin",
+		"med_name": "Buprenotex"
+	}, {
+		"substance_name": "Buprenorfin",
+		"med_name": "Molterfin"
+	}, {
+		"substance_name": "Buprenorfin",
+		"med_name": "Norspan"
+	}, {
+		"substance_name": "Buprenorfin",
+		"med_name": "Temgesic"
+	}, {
+		"substance_name": "Buprenorfin",
+		"med_name": "Suboxone"
+	}, {
+		"substance_name": "Buprenorfin",
+		"med_name": "Subuphine"
+	}, {
+		"substance_name": "Buprenorfin",
+		"med_name": "Subutex"
+	}, {
+		"substance_name": "Desmopressin",
+		"med_name": "Desmopressin"
+	}, {
+		"substance_name": "Desmopressin",
+		"med_name": "Minirin"
+	}, {
+		"substance_name": "Desmopressin",
+		"med_name": "Nocutil"
+	}, {
+		"substance_name": "Desmopressin",
+		"med_name": "Octostim"
+	}, {
+		"substance_name": "Dexametason",
+		"med_name": "Dexametason"
+	}, {
+		"substance_name": "Dextran",
+		"med_name": "Macrodex m NaCl"
+	}, {
+		"substance_name": "Dextran",
+		"med_name": "Plasmodex"
+	}, {
+		"substance_name": "Dextran",
+		"med_name": "Promiten"
+	}, {
+		"substance_name": "Dextran",
+		"med_name": "RescueFlow"
+	}, {
+		"substance_name": "Dextran",
+		"med_name": "Rheomacrodex m NaCl"
+	}, {
+		"substance_name": "Efedrin",
+		"med_name": "Efedrin"
+	}, {
+		"substance_name": "Efedrin",
+		"med_name": "Lepheton"
+	}, {
+		"substance_name": "Efedrin",
+		"med_name": "Lergigan comp"
+	}, {
+		"substance_name": "Efedrin",
+		"med_name": "Mollipect"
+	}, {
+		"substance_name": "Eplerenon",
+		"med_name": "Inspra "
+	}, {
+		"substance_name": "Erytropoietin",
+		"med_name": "Abseamed"
+	}, {
+		"substance_name": "Erytropoietin",
+		"med_name": "Binocrit"
+	}, {
+		"substance_name": "Erytropoietin",
+		"med_name": "Biopoin"
+	}, {
+		"substance_name": "Erytropoietin",
+		"med_name": "Epoetin alfa"
+	}, {
+		"substance_name": "Erytropoietin",
+		"med_name": "Eporatio"
+	}, {
+		"substance_name": "Erytropoietin",
+		"med_name": "Eprex"
+	}, {
+		"substance_name": "Erytropoietin",
+		"med_name": "NeoRecormon"
+	}, {
+		"substance_name": "Erytropoietin",
+		"med_name": "Retacrit"
+	}, {
+		"substance_name": "Erytropoietin",
+		"med_name": "Silapo"
+	}, {
+		"substance_name": "Etilefrin",
+		"med_name": "Effortil"
+	}, {
+		"substance_name": "Exemestan",
+		"med_name": "Aromasin "
+	}, {
+		"substance_name": "Exemestan",
+		"med_name": "Exemestan"
+	}, {
+		"substance_name": "Fentanyl",
+		"med_name": "Abstral"
+	}, {
+		"substance_name": "Fentanyl",
+		"med_name": "Actiq"
+	}, {
+		"substance_name": "Fentanyl",
+		"med_name": "Breakyl"
+	}, {
+		"substance_name": "Fentanyl",
+		"med_name": "Durogesic"
+	}, {
+		"substance_name": "Fentanyl",
+		"med_name": "Fentanyl"
+	}, {
+		"substance_name": "Fentanyl",
+		"med_name": "Instanyl"
+	}, {
+		"substance_name": "Fentanyl",
+		"med_name": "Leptanal"
+	}, {
+		"substance_name": "Fentanyl",
+		"med_name": "Matrifen"
+	}, {
+		"substance_name": "Fentanyl",
+		"med_name": "PecFent"
+	}, {
+		"substance_name": "Fludrokortison",
+		"med_name": "Florinef"
+	}, {
+		"substance_name": "Fluokortolon",
+		"med_name": "Doloproct"
+	}, {
+		"substance_name": "Follitropin alfa",
+		"med_name": "Gonal-F "
+	}, {
+		"substance_name": "Follitropin beta",
+		"med_name": "Puregon"
+	}, {
+		"substance_name": "Follitropin beta",
+		"med_name": "Fertavid"
+	}, {
+		"substance_name": "Formoterol",
+		"med_name": "Assieme Turbuhaler"
+	}, {
+		"substance_name": "Formoterol",
+		"med_name": "Budfor"
+	}, {
+		"substance_name": "Formoterol",
+		"med_name": "Edoflo"
+	}, {
+		"substance_name": "Formoterol",
+		"med_name": "Flutiform"
+	}, {
+		"substance_name": "Formoterol",
+		"med_name": "Foradil"
+	}, {
+		"substance_name": "Formoterol",
+		"med_name": "Formatris Novolizer"
+	}, {
+		"substance_name": "Formoterol",
+		"med_name": "Innovair"
+	}, {
+		"substance_name": "Formoterol",
+		"med_name": "Oxez Turbuhaler"
+	}, {
+		"substance_name": "Formoterol",
+		"med_name": "Oxis Turbuhaler "
+	}, {
+		"substance_name": "Formoterol",
+		"med_name": "Rilast Turbuhaler"
+	}, {
+		"substance_name": "Formoterol",
+		"med_name": "Rilast Forte Turbuhaler"
+	}, {
+		"substance_name": "Formoterol",
+		"med_name": "Symbicort Forte Turbu-"
+	}, {
+		"substance_name": "Formoterol",
+		"med_name": "haler "
+	}, {
+		"substance_name": "Formoterol",
+		"med_name": "Symbicort Mite Turbu-"
+	}, {
+		"substance_name": "Formoterol",
+		"med_name": "haler "
+	}, {
+		"substance_name": "Formoterol",
+		"med_name": "Symbicort Turbuhaler "
+	}, {
+		"substance_name": "Fulvestrant",
+		"med_name": "Faslodex "
+	}, {
+		"substance_name": "Furosemid",
+		"med_name": "Furix"
+	}, {
+		"substance_name": "Furosemid",
+		"med_name": "Furix Retard"
+	}, {
+		"substance_name": "Furosemid",
+		"med_name": "Furosemid"
+	}, {
+		"substance_name": "Furosemid",
+		"med_name": "Impugan"
+	}, {
+		"substance_name": "Furosemid",
+		"med_name": "Lasix Retard"
+	}, {
+		"substance_name": "Hydroklortiazid",
+		"med_name": "Accupro Comp"
+	}, {
+		"substance_name": "Hydroklortiazid",
+		"med_name": "Asolzid"
+	}, {
+		"substance_name": "Hydroklortiazid",
+		"med_name": "Amiloferm"
+	}, {
+		"substance_name": "Hydroklortiazid",
+		"med_name": "Amiloferm mite"
+	}, {
+		"substance_name": "Hydroklortiazid",
+		"med_name": "Atacand Plus"
+	}, {
+		"substance_name": "Hydroklortiazid",
+		"med_name": "Blopresid Comp"
+	}, {
+		"substance_name": "Hydroklortiazid",
+		"med_name": "Blopress Comp"
+	}, {
+		"substance_name": "Hydroklortiazid",
+		"med_name": "Candemox Comp"
+	}, {
+		"substance_name": "Hydroklortiazid",
+		"med_name": "Candesarstad Comp"
+	}, {
+		"substance_name": "Hydroklortiazid",
+		"med_name": "Candesartan"
+	}, {
+		"substance_name": "Hydroklortiazid",
+		"med_name": "chlorothiazide"
+	}, {
+		"substance_name": "Hydroklortiazid",
+		"med_name": "Candexetil comp"
+	}, {
+		"substance_name": "Hydroklortiazid",
+		"med_name": "CoAprovel"
+	}, {
+		"substance_name": "Hydroklortiazid",
+		"med_name": "Corixil Comp"
+	}, {
+		"substance_name": "Hydroklortiazid",
+		"med_name": "Cozaar Comp"
+	}, {
+		"substance_name": "Hydroklortiazid",
+		"med_name": "Cozaar Comp forte"
+	}, {
+		"substance_name": "Hydroklortiazid",
+		"med_name": "Diovan Comp"
+	}, {
+		"substance_name": "Hydroklortiazid",
+		"med_name": "Enalapril"
+	}, {
+		"substance_name": "Hydroklortiazid",
+		"med_name": "Esidrex"
+	}, {
+		"substance_name": "Hydroklortiazid",
+		"med_name": "Hydromed"
+	}, {
+		"substance_name": "Hydroklortiazid",
+		"med_name": "Hypoloc Comp"
+	}, {
+		"substance_name": "Hydroklortiazid",
+		"med_name": "Irbesartan"
+	}, {
+		"substance_name": "Hydroklortiazid",
+		"med_name": "thiazide"
+	}, {
+		"substance_name": "Hydroklortiazid",
+		"med_name": "Kandrozid Comp"
+	}, {
+		"substance_name": "Hydroklortiazid",
+		"med_name": "Karvezide"
+	}, {
+		"substance_name": "Hydroklortiazid",
+		"med_name": "Kinapril"
+	}, {
+		"substance_name": "Hydroklortiazid",
+		"med_name": "Kinastad Comp"
+	}, {
+		"substance_name": "Hydroklortiazid",
+		"med_name": "Kinoprilam Comp"
+	}, {
+		"substance_name": "Hydroklortiazid",
+		"med_name": "Kipristad Comp"
+	}, {
+		"substance_name": "Hydroklortiazid",
+		"med_name": "Linatil Comp"
+	}, {
+		"substance_name": "Hydroklortiazid",
+		"med_name": "Linatil Comp mite"
+	}, {
+		"substance_name": "Hydroklortiazid",
+		"med_name": "Lisinopril"
+	}, {
+		"substance_name": "Hydroklortiazid",
+		"med_name": "Hydroklortiazid"
+	}, {
+		"substance_name": "Hydroklortiazid",
+		"med_name": "Losarstad Comp"
+	}, {
+		"substance_name": "Hydroklortiazid",
+		"med_name": "Losartan"
+	}, {
+		"substance_name": "Hydroklortiazid",
+		"med_name": "thiazide"
+	}, {
+		"substance_name": "Hydroklortiazid",
+		"med_name": "Losatrix Comp"
+	}, {
+		"substance_name": "Hydroklortiazid",
+		"med_name": "Marozid"
+	}, {
+		"substance_name": "Hydroklortiazid",
+		"med_name": "Micardis Plus"
+	}, {
+		"substance_name": "Hydroklortiazid",
+		"med_name": "Moduretic"
+	}, {
+		"substance_name": "Hydroklortiazid",
+		"med_name": "Moduretic mite"
+	}, {
+		"substance_name": "Hydroklortiazid",
+		"med_name": "Nebilet Comp"
+	}, {
+		"substance_name": "Hydroklortiazid",
+		"med_name": "Normorix"
+	}, {
+		"substance_name": "Hydroklortiazid",
+		"med_name": "Normorix mite"
+	}, {
+		"substance_name": "Hydroklortiazid",
+		"med_name": "Parapres Comp"
+	}, {
+		"substance_name": "Hydroklortiazid",
+		"med_name": "Parapres Comp Forte"
+	}, {
+		"substance_name": "Hydroklortiazid",
+		"med_name": "Presval Comp"
+	}, {
+		"substance_name": "Hydroklortiazid",
+		"med_name": "Quinapril/"
+	}, {
+		"substance_name": "Hydroklortiazid",
+		"med_name": "Hydroklortiazid"
+	}, {
+		"substance_name": "Hydroklortiazid",
+		"med_name": "Ratacand Plus"
+	}, {
+		"substance_name": "Hydroklortiazid",
+		"med_name": "Ramipril"
+	}, {
+		"substance_name": "Hydroklortiazid",
+		"med_name": "Hydroklortiazid"
+	}, {
+		"substance_name": "Hydroklortiazid",
+		"med_name": "Renitec Comp"
+	}, {
+		"substance_name": "Hydroklortiazid",
+		"med_name": "Sparkal"
+	}, {
+		"substance_name": "Hydroklortiazid",
+		"med_name": "Sparkal mite"
+	}, {
+		"substance_name": "Hydroklortiazid",
+		"med_name": "Synerpril"
+	}, {
+		"substance_name": "Hydroklortiazid",
+		"med_name": "Tanlozid"
+	}, {
+		"substance_name": "Hydroklortiazid",
+		"med_name": "Tareg Comp"
+	}, {
+		"substance_name": "Hydroklortiazid",
+		"med_name": "Teveten Comp"
+	}, {
+		"substance_name": "Hydroklortiazid",
+		"med_name": "Triatec Comp"
+	}, {
+		"substance_name": "Hydroklortiazid",
+		"med_name": "Triatec Comp mite"
+	}, {
+		"substance_name": "Hydroklortiazid",
+		"med_name": "Valsartan"
+	}, {
+		"substance_name": "Hydroklortiazid",
+		"med_name": "thiazide"
+	}, {
+		"substance_name": "Hydroklortiazid",
+		"med_name": "Vilantal comp"
+	}, {
+		"substance_name": "Hydroklortiazid",
+		"med_name": "Vivendal Comp"
+	}, {
+		"substance_name": "Hydroklortiazid",
+		"med_name": "Zestoretic"
+	}, {
+		"substance_name": "Hydrokortison",
+		"med_name": "Colifoam"
+	}, {
+		"substance_name": "Hydrokortison",
+		"med_name": "Hydrokortison"
+	}, {
+		"substance_name": "Hydrokortison",
+		"med_name": "Proctosedyl"
+	}, {
+		"substance_name": "Hydrokortison",
+		"med_name": "Solu-Cortef"
+	}, {
+		"substance_name": "Hydrokortison",
+		"med_name": "Xyloproct"
+	}, {
+		"substance_name": "Hydromorfon",
+		"med_name": "Palladon"
+	}, {
+		"substance_name": "Insulin",
+		"med_name": "Insulin"
+	}, {
+		"substance_name": "Klomifen",
+		"med_name": "Pergotime "
+	}, {
+		"substance_name": "Letrozol",
+		"med_name": "Femar"
+	}, {
+		"substance_name": "Letrozol",
+		"med_name": "Letralan"
+	}, {
+		"substance_name": "Letrozol",
+		"med_name": "Letrozol"
+	}, {
+		"substance_name": "Lutropin alfa",
+		"med_name": "Luveris "
+	}, {
+		"substance_name": "Mekasermin",
+		"med_name": "Increlex"
+	}, {
+		"substance_name": "Mannitol",
+		"med_name": "Mannitol"
+	}, {
+		"substance_name": "Metadon",
+		"med_name": "Metadon"
+	}, {
+		"substance_name": "Metylfenidat",
+		"med_name": "Concerta"
+	}, {
+		"substance_name": "Metylfenidat",
+		"med_name": "Equasym Depot"
+	}, {
+		"substance_name": "Metylfenidat",
+		"med_name": "Medikinet"
+	}, {
+		"substance_name": "Metylfenidat",
+		"med_name": "Ritalin/Ritalina"
+	}, {
+		"substance_name": "Modafinil",
+		"med_name": "Modafinil"
+	}, {
+		"substance_name": "Modafinil",
+		"med_name": "Modiodal"
+	}, {
+		"substance_name": "Morfin",
+		"med_name": "Depolan"
+	}, {
+		"substance_name": "Morfin",
+		"med_name": "Dolcontin"
+	}, {
+		"substance_name": "Morfin",
+		"med_name": "Dolcontin Unotard"
+	}, {
+		"substance_name": "Morfin",
+		"med_name": "Morfin"
+	}, {
+		"substance_name": "Morfin",
+		"med_name": "Morfin"
+	}, {
+		"substance_name": "Morfin",
+		"med_name": "Morfin"
+	}, {
+		"substance_name": "Morfin",
+		"med_name": "Morfin"
+	}, {
+		"substance_name": "Morfin",
+		"med_name": "Oramorph "
+	}, {
+		"substance_name": "Morfin",
+		"med_name": "Spasmofen"
+	}, {
+		"substance_name": "Oxikodon",
+		"med_name": "Oxikodon"
+	}, {
+		"substance_name": "Oxikodon",
+		"med_name": "OxyContin"
+	}, {
+		"substance_name": "Oxikodon",
+		"med_name": "Oxylan"
+	}, {
+		"substance_name": "Oxikodon",
+		"med_name": "OxyNorm"
+	}, {
+		"substance_name": "Oxikodon",
+		"med_name": "Targiniq"
+	}, {
+		"substance_name": "Pegvisomant",
+		"med_name": "Somavert"
+	}, {
+		"substance_name": "Petidin",
+		"med_name": "Petidin"
+	}, {
+		"substance_name": "Prednisolon",
+		"med_name": "Precortalon Aquosum "
+	}, {
+		"substance_name": "Prednisolon",
+		"med_name": "Pred-Clysma "
+	}, {
+		"substance_name": "Prednisolon",
+		"med_name": "Prednisolon"
+	}, {
+		"substance_name": "Prednisolon",
+		"med_name": "Scheriproct N "
+	}, {
+		"substance_name": "Prednison",
+		"med_name": "Deltison"
+	}, {
+		"substance_name": "Prednison",
+		"med_name": "Lodotra"
+	}, {
+		"substance_name": "Probenecid",
+		"med_name": "Probecid"
+	}, {
+		"substance_name": "Pseudoefedrin",
+		"med_name": ""
+	}, {
+		"substance_name": "Raloxifen",
+		"med_name": "Evista"
+	}, {
+		"substance_name": "Raloxifen",
+		"med_name": "Ralox"
+	}, {
+		"substance_name": "Raloxifen",
+		"med_name": "Raloxifen"
+	}, {
+		"substance_name": "Rasagilin",
+		"med_name": "Azilect"
+	}, {
+		"substance_name": "Remifentanil",
+		"med_name": "Remifentanil"
+	}, {
+		"substance_name": "Remifentanil",
+		"med_name": "Ultiva"
+	}, {
+		"substance_name": "Salbutamol",
+		"med_name": "Airomir "
+	}, {
+		"substance_name": "Salbutamol",
+		"med_name": "Airomir Autohaler "
+	}, {
+		"substance_name": "Salbutamol",
+		"med_name": "Buventol Easyhaler "
+	}, {
+		"substance_name": "Salbutamol",
+		"med_name": "Combivent"
+	}, {
+		"substance_name": "Salbutamol",
+		"med_name": "Ipramol "
+	}, {
+		"substance_name": "Salbutamol",
+		"med_name": "Sabufarm"
+	}, {
+		"substance_name": "Salbutamol",
+		"med_name": "Salbutamol"
+	}, {
+		"substance_name": "Salbutamol",
+		"med_name": "Sapimol"
+	}, {
+		"substance_name": "Salbutamol",
+		"med_name": "Ventilastin Novolizer"
+	}, {
+		"substance_name": "Salbutamol",
+		"med_name": "Ventoline "
+	}, {
+		"substance_name": "Salbutamol",
+		"med_name": "Ventoline Diskus "
+	}, {
+		"substance_name": "Salbutamol",
+		"med_name": "Ventoline Evohaler "
+	}, {
+		"substance_name": "Selegilin",
+		"med_name": "Eldepryl "
+	}, {
+		"substance_name": "Selegilin",
+		"med_name": "Selegilin"
+	}, {
+		"substance_name": "Sibutramin",
+		"med_name": ""
+	}, {
+		"substance_name": "Somatropin",
+		"med_name": "Genotropin"
+	}, {
+		"substance_name": "Somatropin",
+		"med_name": "Genotropin Miniquick"
+	}, {
+		"substance_name": "Somatropin",
+		"med_name": "Humatrope"
+	}, {
+		"substance_name": "Somatropin",
+		"med_name": "Norditropin NordiFlex"
+	}, {
+		"substance_name": "Somatropin",
+		"med_name": "Norditropin Simplexx"
+	}, {
+		"substance_name": "Somatropin",
+		"med_name": "NutropinAq"
+	}, {
+		"substance_name": "Somatropin",
+		"med_name": "Omnitrope"
+	}, {
+		"substance_name": "Somatropin",
+		"med_name": "Saizen"
+	}, {
+		"substance_name": "Somatropin",
+		"med_name": "Saizen click.easy"
+	}, {
+		"substance_name": "Somatropin",
+		"med_name": "Zomacton"
+	}, {
+		"substance_name": "Spironolakton",
+		"med_name": "Aldactone"
+	}, {
+		"substance_name": "Spironolakton",
+		"med_name": "Spironolactone/Spirono-"
+	}, {
+		"substance_name": "Spironolakton",
+		"med_name": "lakton "
+	}, {
+		"substance_name": "Sufentanil",
+		"med_name": "Sufenta"
+	}, {
+		"substance_name": "Tamoxifen",
+		"med_name": "Nolvadex "
+	}, {
+		"substance_name": "Tamoxifen",
+		"med_name": "Tamoxifen"
+	}, {
+		"substance_name": "Terbutalin",
+		"med_name": "Bricanyl "
+	}, {
+		"substance_name": "Terbutalin",
+		"med_name": "Bricanyl Depot"
+	}, {
+		"substance_name": "Terbutalin",
+		"med_name": "Bricanyl Turbuhaler"
+	}, {
+		"substance_name": "Terbutalin",
+		"med_name": "Terbasmin Turbuhaler"
+	}, {
+		"substance_name": "Testosteron",
+		"med_name": "Nebido"
+	}, {
+		"substance_name": "Testosteron",
+		"med_name": "Testim"
+	}, {
+		"substance_name": "Testosteron",
+		"med_name": "Testogel"
+	}, {
+		"substance_name": "Testosteron",
+		"med_name": "Tostrex"
+	}, {
+		"substance_name": "Testosteron",
+		"med_name": "Undestor Testocaps"
+	}, {
+		"substance_name": "Tetrakosaktid",
+		"med_name": "Synacthen"
+	}, {
+		"substance_name": "Tetrakosaktid",
+		"med_name": "Synacthen Depot"
+	}, {
+		"substance_name": "Tibolon",
+		"med_name": "Boltin"
+	}, {
+		"substance_name": "Tibolon",
+		"med_name": "Livial "
+	}, {
+		"substance_name": "Tibolon",
+		"med_name": "Tibolon"
+	}, {
+		"substance_name": "Tolvaptan",
+		"med_name": "Samsca"
+	}, {
+		"substance_name": "Torasemid",
+		"med_name": "Torem"
+	}, {
+		"substance_name": "Torasemid",
+		"med_name": "Torasemid"
+	}, {
+		"substance_name": "Toremifen",
+		"med_name": "Fareston "
+	}, {
+		"substance_name": "Triamcinolon",
+		"med_name": "Kenacort-T "
+	}, {
+		"substance_name": "Triamcinolon",
+		"med_name": "Lederspan"
+	}, {
+		"substance_name": "Urofollitropin",
+		"med_name": "Bravelle"
+	}, {
+		"substance_name": "Urofollitropin",
+		"med_name": "Fostimon"
+	}]
+}

@@ -9,8 +9,8 @@ import SwiftUI
 
 struct MedicineList: View {
     
-    @State private var selection: Set<DopingMed> = []
-    var medicineList: [DopingMed]
+    @State private var selection: Set<Med> = []
+    var medicineList: [Med] = []
     
     var body: some View {
         NavigationView {
@@ -26,7 +26,7 @@ struct MedicineList: View {
         }
     }
     
-    private func selectDeselect(_ medicine: DopingMed) {
+    private func selectDeselect(_ medicine: Med) {
         if selection.contains(medicine) {
             selection.remove(medicine)
         } else {
@@ -35,23 +35,23 @@ struct MedicineList: View {
     }
 }
 
-struct MedicineList_Previews: PreviewProvider {
-    static var previews: some View {
-        MedicineList(medicineList: medicines)
-    }
-}
+//struct MedicineList_Previews: PreviewProvider {
+//    static var previews: some View {
+//        MedicineList(medicineList: medicines)
+//    }
+//}
 
 
-
-var medicines: [DopingMed] {
-    [
-        .init(title: "-",
-              properties: Properties(id: ID(bsonType: ""),
-                                     medName: ID(bsonType: "Alvedon"),
-                                     substanceName: ID(bsonType: "Paracetamol"))),
-        .init(title: "-",
-              properties: Properties(id: ID(bsonType: ""),
-                                     medName: ID(bsonType: "Ipren"),
-                                     substanceName: ID(bsonType: "Ibuprofen")))
-    ]
-}
+//
+//var medicines: [DopingMed] {
+//    [
+//        .init(title: "-",
+//              properties: Properties(id: ID(bsonType: ""),
+//                                     medName: ID(bsonType: "Alvedon"),
+//                                     substanceName: ID(bsonType: "Paracetamol"))),
+//        .init(title: "-",
+//              properties: Properties(id: ID(bsonType: ""),
+//                                     medName: ID(bsonType: "Ipren"),
+//                                     substanceName: ID(bsonType: "Ibuprofen")))
+//    ]
+//}

@@ -20,7 +20,7 @@ struct MainView: View {
                     tabIcon(selection == 0 ? Page.home.activeImage : Page.home.inactiveImage)
                 }
                 .tag(0)
-            MedicineList(medicineList: medicines)
+            MedicineList()
                 .tabItem {
                     tabIcon(selection == 1 ? Page.favourites.activeImage : Page.favourites.inactiveImage)
                 }
