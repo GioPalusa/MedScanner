@@ -5,10 +5,9 @@
 //  Created by Jacob Ahlberg on 2021-10-15.
 //
 
-import Foundation
 import RealmSwift
 
-let app = RealmSwift.Realm..App(id: "medscanner-howfu")
+let app = RealmSwift.App(id: "medscanner-howfu")
 
 class MedRepository {
     private let networkClient = NetworkClient()

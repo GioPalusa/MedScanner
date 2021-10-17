@@ -32,6 +32,7 @@
 		A48686A1271AB4F900FA8530 /* CustomCameraRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48686A0271AB4F900FA8530 /* CustomCameraRepresentable.swift */; };
 		A48686AA271C191C00FA8530 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = A48686A9271C191C00FA8530 /* Realm */; };
 		A48686AC271C191C00FA8530 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A48686AB271C191C00FA8530 /* RealmSwift */; };
+		A48686AE271C1E1600FA8530 /* DopingMed.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48686AD271C1E1600FA8530 /* DopingMed.swift */; };
 		AB317DA2271978DA007172CE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB317DA1271978DA007172CE /* MainView.swift */; };
 		AB317DA72719CBEF007172CE /* MedicineList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB317DA62719CBEF007172CE /* MedicineList.swift */; };
 		AB317DA92719CC42007172CE /* UserDefaultExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB317DA82719CC42007172CE /* UserDefaultExtention.swift */; };
@@ -67,6 +68,7 @@
 		A486869E2719D4A700FA8530 /* CustomCameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCameraController.swift; sourceTree = "<group>"; };
 		A48686A0271AB4F900FA8530 /* CustomCameraRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCameraRepresentable.swift; sourceTree = "<group>"; };
 		A48686A2271AF43C00FA8530 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A48686AD271C1E1600FA8530 /* DopingMed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DopingMed.swift; path = MedScanner/ViewControllerRepresentable/DopingMed.swift; sourceTree = SOURCE_ROOT; };
 		AB317DA1271978DA007172CE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		AB317DA62719CBEF007172CE /* MedicineList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineList.swift; sourceTree = "<group>"; };
 		AB317DA82719CC42007172CE /* UserDefaultExtention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultExtention.swift; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				AB317DB1271ADD85007172CE /* Medicine.swift */,
+				A48686AD271C1E1600FA8530 /* DopingMed.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -366,6 +369,7 @@
 				AB317DA72719CBEF007172CE /* MedicineList.swift in Sources */,
 				498CC425271AB7EE00EC743C /* SearchBar.swift in Sources */,
 				AB317DB0271ACE24007172CE /* TextExtention.swift in Sources */,
+				A48686AE271C1E1600FA8530 /* DopingMed.swift in Sources */,
 				A486869D2719D46500FA8530 /* CaptureButtonView.swift in Sources */,
 				AB317DA92719CC42007172CE /* UserDefaultExtention.swift in Sources */,
 			);
@@ -589,7 +593,7 @@
 			repositoryURL = "https://github.com/realm/realm-cocoa.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
+				minimumVersion = 10.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
