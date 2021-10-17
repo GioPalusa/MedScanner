@@ -10,11 +10,7 @@ import SwiftUI
 struct MedicineList: View {
     
     @State private var selection: Set<Medicine> = []
-    
-    var medicineList = [
-        Medicine(id: UUID(), name: "Alvedon", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."),
-        Medicine(id: UUID(), name: "Ipren", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."),
-        Medicine(id: UUID(), name: "Pamol", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.")]
+    var medicineList: [Medicine]
     
     var body: some View {
         NavigationView {
@@ -41,6 +37,61 @@ struct MedicineList: View {
 
 struct MedicineList_Previews: PreviewProvider {
     static var previews: some View {
-        MedicineList()
+        MedicineList(medicineList: medicines)
     }
+}
+
+
+
+var medicines: [Medicine] {
+    [
+        Medicine(name: "Alvedon",
+                 content: "Paracetamol",
+                 description: """
+Alvedon innehåller paracetamol som är
+smärtlindrande oh febernedsättande.
+
+Alvedon används för behandling av tillfälliga
+feber- och smärttillständ av lindrig art, t ex feber
+vid förkylning, huvudvärk, tandvärk,
+menstruationssmärtor, muskel- och ledvärk.
+
+Alvedon kan användas av personer med känslig
+mage eller magsär och personer med ökad
+blödningsbenägenhet.
+""",
+                 amount: "500 mg"),
+        Medicine(name: "Ipren",
+                 content: "Ibuprofen",
+                 description: """
+Alvedon innehåller paracetamol som är
+smärtlindrande oh febernedsättande.
+
+Alvedon används för behandling av tillfälliga
+feber- och smärttillständ av lindrig art, t ex feber
+vid förkylning, huvudvärk, tandvärk,
+menstruationssmärtor, muskel- och ledvärk.
+
+Alvedon kan användas av personer med känslig
+mage eller magsär och personer med ökad
+blödningsbenägenhet.
+""",
+                 amount: "500 mg"),
+        Medicine(name: "Pamol",
+                 content: "Lorem ipsum",
+                 description: """
+Alvedon innehåller paracetamol som är
+smärtlindrande oh febernedsättande.
+
+Alvedon används för behandling av tillfälliga
+feber- och smärttillständ av lindrig art, t ex feber
+vid förkylning, huvudvärk, tandvärk,
+menstruationssmärtor, muskel- och ledvärk.
+
+Alvedon kan användas av personer med känslig
+mage eller magsär och personer med ökad
+blödningsbenägenhet.
+""",
+                 amount: "500 mg")
+    ]
 }
