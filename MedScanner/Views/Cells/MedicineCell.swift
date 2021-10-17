@@ -10,7 +10,7 @@ import SwiftUI
 struct MedicineCell: View {
     
     let isExpanded: Bool
-    let medicine: Medicine
+    let medicine: DopingMed
 
     var expandedView: some View {
         HStack {
@@ -24,20 +24,20 @@ struct MedicineCell: View {
                 }
                 .foregroundColor(.custom(.approved))
 
-                Text(medicine.description)
+                Text(medicine.properties.description)
 
-//                HStack(spacing: 20) {
-//                    Image("plus_sign_icon")
-//                        .foregroundColor(.custom(.error))
-//                        .frame(width: 15, height: 15, alignment: .center)
-//                        .rotationEffect(.degrees(-45))
-//                    Text("Ta bort från Min Lista")
-//                        .foregroundColor(.custom(.error))
-//                }
-//                .contentShape(Rectangle())
-//                .onTapGesture {
-//                    print("Show details for user")
-//                }
+                //                HStack(spacing: 20) {
+                //                    Image("plus_sign_icon")
+                //                        .foregroundColor(.custom(.error))
+                //                        .frame(width: 15, height: 15, alignment: .center)
+                //                        .rotationEffect(.degrees(-45))
+                //                    Text("Ta bort från Min Lista")
+                //                        .foregroundColor(.custom(.error))
+                //                }
+                //                .contentShape(Rectangle())
+                //                .onTapGesture {
+                //                    print("Show details for user")
+                //                }
             }
             Spacer()
         }
@@ -49,13 +49,13 @@ struct MedicineCell: View {
             VStack {
                 HStack {
                     VStack(alignment: .leading) {
-                            Text(medicine.name)
-                                .font(.headline)
-                                .fontWeight(.bold)
-                                .lineLimit(2)
-                            Text(medicine.content)
-                            Text(medicine.amount)
-                                .fontWeight(.semibold)
+                        Text(medicine.title)
+                            .font(.headline)
+                            .fontWeight(.bold)
+                            .lineLimit(2)
+                        Text(medicine.properties.content)
+                        Text(medicine.properties.amount)
+                            .fontWeight(.semibold)
 
                         if isExpanded {
                             expandedView
@@ -78,24 +78,10 @@ struct MedicineCell: View {
 struct MedicineCell_Previews: PreviewProvider {
     static var previews: some View {
         VStack {
-            MedicineCell(isExpanded: false, medicine: Medicine(name: "Alvedon",
-                                                               content: "Paracetamol",
-                                                               description: """
-Alvedon innehåller paracetamol som är
-smärtlindrande oh febernedsättande.
-
-Alvedon används för behandling av tillfälliga
-feber- och smärttillständ av lindrig art, t ex feber
-vid förkylning, huvudvärk, tandvärk,
-menstruationssmärtor, muskel- och ledvärk.
-
-Alvedon kan användas av personer med känslig
-mage eller magsär och personer med ökad
-blödningsbenägenhet.
-""", amount: "500 mg"))
-            MedicineCell(isExpanded: false, medicine: Medicine(name: "name",
-                                                               content: "Paracetamol",
-                                                               description: "description", amount: "400 mg"))
+            MedicineCell(isExpanded: false,
+                         medicine: DopingMed(title: "Alvedon", properties: Properties(id: ID(bsonType: ""), name: ID(bsonType: ""))))
+            MedicineCell(isExpanded: false,
+                         medicine: DopingMed(title: "Alvedon", properties: Properties(id: ID(bsonType: ""), name: ID(bsonType: ""))))
         }.frame(width: .infinity, height: 100)
     }
 }
