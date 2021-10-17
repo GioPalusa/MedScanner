@@ -54,7 +54,9 @@ struct StartPage: View {
 
             Spacer()
             if presentCameraFrame {
-                CaptureButtonView()
+                CameraControlsView(captureButtonAction: { [weak customCameraRepresentable] in
+                    customCameraRepresentable?.takePhoto()
+                })
                     .padding(.bottom, 16)
             }
         }

@@ -13,11 +13,11 @@ struct CaptureButtonView: View {
     @State private var animationAmount: CGFloat = 1
 
     var body: some View {
-        Image(systemName: "camera")
+        Image(systemName: "camera.fill")
             .font(.largeTitle)
             .padding(20)
-            .background(colorScheme == .dark ? Color.white : Color.black)
-            .foregroundColor(colorScheme == .dark ? Color.black : Color.white)
+            .background(.white)
+            .foregroundColor(.black)
             .clipShape(Circle())
             .overlay(
                 Circle()

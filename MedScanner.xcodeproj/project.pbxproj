@@ -35,6 +35,7 @@
 		AB317DAB271AC1D7007172CE /* UIColorExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB317DAA271AC1D7007172CE /* UIColorExtention.swift */; };
 		AB317DAE271ACA54007172CE /* MedicineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB317DAD271ACA54007172CE /* MedicineCell.swift */; };
 		AB317DB0271ACE24007172CE /* TextExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB317DAF271ACE24007172CE /* TextExtention.swift */; };
+		AB317DB2271ADD85007172CE /* Medicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB317DB1271ADD85007172CE /* Medicine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,12 +62,14 @@
 		A486869C2719D46500FA8530 /* CaptureButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureButtonView.swift; sourceTree = "<group>"; };
 		A486869E2719D4A700FA8530 /* CustomCameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCameraController.swift; sourceTree = "<group>"; };
 		A48686A0271AB4F900FA8530 /* CustomCameraRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCameraRepresentable.swift; sourceTree = "<group>"; };
+		A48686A2271AF43C00FA8530 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		AB317DA1271978DA007172CE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		AB317DA62719CBEF007172CE /* MedicineList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineList.swift; sourceTree = "<group>"; };
 		AB317DA82719CC42007172CE /* UserDefaultExtention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultExtention.swift; sourceTree = "<group>"; };
 		AB317DAA271AC1D7007172CE /* UIColorExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtention.swift; sourceTree = "<group>"; };
 		AB317DAD271ACA54007172CE /* MedicineCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineCell.swift; sourceTree = "<group>"; };
 		AB317DAF271ACE24007172CE /* TextExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextExtention.swift; sourceTree = "<group>"; };
+		AB317DB1271ADD85007172CE /* Medicine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Medicine.swift; path = MedScanner/Extentions/Medicine.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +155,7 @@
 		4992AEBD2719BE1900CAE610 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				AB317DB1271ADD85007172CE /* Medicine.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -183,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				49051E61271AFEE700E2031C /* ViewModifiers */,
+				A48686A2271AF43C00FA8530 /* Info.plist */,
 				AB317DA32719C75B007172CE /* Extentions */,
 				4992AEBD2719BE1900CAE610 /* Models */,
 				A48686942719C77300FA8530 /* Coordinators */,
@@ -330,6 +335,7 @@
 				49051E63271AFEFC00E2031C /* ViewDidLoadModifier.swift in Sources */,
 				4992AEBC271989DE00CAE610 /* MedRepository.swift in Sources */,
 				496F7F02271ACA4000A16DE5 /* Color+extensions.swift in Sources */,
+				AB317DB2271ADD85007172CE /* Medicine.swift in Sources */,
 				A48686902719B82A00FA8530 /* StartPage.swift in Sources */,
 				AB317DA2271978DA007172CE /* MainView.swift in Sources */,
 				A486868227196A1800FA8530 /* MedScannerApp.swift in Sources */,
@@ -480,8 +486,9 @@
 				DEVELOPMENT_TEAM = S8TY89ZL5Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MedScanner/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Vi behöver använda kameran för att känna igen texten på etiketterna.";
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -514,8 +521,9 @@
 				DEVELOPMENT_TEAM = S8TY89ZL5Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MedScanner/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Vi behöver använda kameran för att känna igen texten på etiketterna.";
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
