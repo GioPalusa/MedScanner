@@ -21,7 +21,7 @@ struct StartPage: View {
     @State private var searchText = String()
     @State private var presentCameraFrame = true
 
-    var viewFrame: some View {
+    var videoFrameView: some View {
         CustomCameraView(
             customCameraRepresentable: customCameraRepresentable,
             imageCompletion: { newImage in
@@ -29,13 +29,9 @@ struct StartPage: View {
             }
         )
         .cornerRadius(26)
-        .frame(height: 300)
         .padding(32)
-        .onAppear {
+        .onViewDidLoad {
             customCameraRepresentable.startRunningCaptureSession()
-        }
-        .onDisappear {
-            customCameraRepresentable.stopRunningCaptureSession()
         }
     }
 
@@ -51,14 +47,15 @@ struct StartPage: View {
 
     var body: some View {
         VStack(spacing: 16) {
-            if presentCameraFrame {
-                viewFrame
-            }
+            videoFrameView
+                .opacity(presentCameraFrame ? 1 : 0)
+                .frame(height: presentCameraFrame ? 300 : 0)
             searchView
 
             Spacer()
             if presentCameraFrame {
                 CaptureButtonView()
+                    .padding(.bottom, 16)
             }
         }
         .background(Color.custom(.background))

@@ -8,54 +8,32 @@
 import SwiftUI
 
 struct MainView: View {
-    
+
     @StateObject var viewRoute = ViewRouter()
+
+    @State var selection = 0
     
     var body: some View {
-        VStack(spacing: 0) {
-            
-            switch viewRoute.currentPage {
-            case .home: StartPage()
-            case .favourites: MedicineList()
-            }
-            
-            HStack(spacing: 100) {
-                TabButton(page: .home)
-                TabButton(page: .favourites)
-            }
-            .padding(.top)
-            .frame(maxWidth: .infinity)
-            .background(
-                Color.custom(.tabMenu)
-                    .ignoresSafeArea()
-            )
+        TabView(selection: $selection) {
+            StartPage()
+                .tabItem {
+                    tabIcon(selection == 0 ? Page.home.activeImage : Page.home.inactiveImage)
+                }
+                .tag(0)
+            MedicineList()
+                .tabItem {
+                    tabIcon(selection == 1 ? Page.favourites.activeImage : Page.favourites.inactiveImage)
+                }
+                .tag(1)
         }
     }
-    
-    @ViewBuilder
-    func TabButton(page: Page) -> some View {
-        
-        Button {
-            viewRoute.currentPage = page
-        } label: {
-            Image(systemName: page.imageName)
-                .resizable()
-                .renderingMode(.template)
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 25, height: 25)
-                .foregroundColor(
-                    viewRoute.currentPage == page ? Color.black
-                    : Color.gray.opacity(0.8)
-                )
-        }.frame(width: 50, height: 40)
-    }
-}
 
-struct BGModifier: ViewModifier {
-    
-    func body(content: Content) -> some View {
-        content
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
+    func tabIcon(_ image: Image) -> some View {
+        image
+            .resizable()
+            .renderingMode(.original)
+            .aspectRatio(contentMode: .fit)
+            .frame(width: 25, height: 25)
     }
 }
 
@@ -75,10 +53,17 @@ enum Page {
     case home
     case favourites
     
-    var imageName: String {
+    var activeImage: Image {
         switch self {
-        case .home: return "house"
-        case .favourites: return "plus.rectangle.on.folder"
+        case .home: return Image("home_active_icon")
+        case .favourites: return Image("user_list_active_icon")
+        }
+    }
+
+    var inactiveImage: Image {
+        switch self {
+        case .home: return Image("home_inactive_icon")
+        case .favourites: return Image("user_list_inactive_icon")
         }
     }
 }

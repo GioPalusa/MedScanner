@@ -20,4 +20,8 @@ extension View {
             self
         }
     }
+
+    func onViewDidLoad(_ perform: @escaping () -> Void) -> some View {
+        modifier(ViewDidLoadModifier(perform: perform))
+    }
 }
