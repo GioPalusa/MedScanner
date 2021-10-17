@@ -49,7 +49,7 @@ struct MedicineCell: View {
             VStack {
                 HStack {
                     VStack(alignment: .leading) {
-                        Text(medicine.title)
+                        Text(medicine.properties.medName.bsonType)
                             .font(.headline)
                             .fontWeight(.bold)
                             .lineLimit(2)

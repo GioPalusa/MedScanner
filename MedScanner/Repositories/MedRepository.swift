@@ -64,7 +64,7 @@ class MedRepository {
     }
 
     private func onRealmOpened(_ realm: Realm) {
-        let task = QsTask(name: "Do laundry")
+//        let task = QsTask(name: "Do laundry")
 
 
     }
