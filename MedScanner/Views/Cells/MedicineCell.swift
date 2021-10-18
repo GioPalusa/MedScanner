@@ -16,13 +16,15 @@ struct MedicineCell: View {
         HStack {
             VStack(alignment: .leading, spacing: 20) {
                 HStack(spacing: 12) {
-                    Image("approved_icon")
+                    Image("warning_icon")
                         .resizable()
+                        .renderingMode(.template)
+                        .foregroundColor(.custom(.doped))
                         .scaledToFill()
                         .frame(width: 24, height: 24, alignment: .center)
-                    Text("Godkänd")
+                    Text("Ej godkänd")
                 }
-                .foregroundColor(.custom(.approved))
+                .foregroundColor(.custom(.doped))
 
                 Text(medicine.description)
 
@@ -38,7 +40,7 @@ struct MedicineCell: View {
                 //                .onTapGesture {
                 //                    print("Show details for user")
                 //                }
-            }
+            }.padding(.top, 2)
             Spacer()
         }
     }
